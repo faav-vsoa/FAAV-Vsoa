@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piloto · FAAV - VSOA</title>
+<meta name="description" content="Estadísticas de piloto de la FAAV en VATSIM.">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="stylesheet" href="../CSS/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+ <defs>
+  <symbol id="ic-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+   <path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/><path d="M19 19v1a2 2 0 0 1-2 2h-4"/>
+  </symbol>
+  <symbol id="ic-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+   <path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M8.5 13.5l2 2 4.5-4.5"/>
+  </symbol>
+  <symbol id="ic-tower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+   <path d="M12 2v4"/><path d="M8 6h8l2 4H6l2-4z"/><path d="M7 10l-1.5 11h13L17 10"/><path d="M4 21h16"/><path d="M9 21v-6h6v6"/>
+  </symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+   <path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>
+  </symbol>
+ </defs>
+</svg>
+
+<header>
+ <nav class="wrap">
+    <a href="index.html#top" class="brand">
+     <img src="../img/Logo FAAV/Logo Faav.png" alt="Escudo FAAV" style="height:50px;width:auto;">
+    <span class="brand-text"><b>FAAV - VSOA</b> <span>Fuerza Aérea Argentina Virtual</span></span>
+   </a>
+  <div class="header-links-row">
+  <div class="navlinks" id="navlinks">
+   <a href="index.html#mision">Institución</a>
+   <a href="index.html#operaciones">Operaciones</a>
+   <a href="index.html#pilotos">Pilotos</a>
+   <a href="index.html#brigadas">Brigadas</a>
+   <a href="index.html#comunidad">Comunidad</a>
+   <a href="reglamento.html">Reglamento</a>
+   <a href="redes.html">REDES</a>
+  </div>
+  <div class="navcta">
+   <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+ </nav>
+</header>
+
+<main id="top">
+
+ <section class="tracker" style="padding-top:180px;">
+  <div class="wrap" style="max-width:1100px;">
+   <div style="margin-bottom:24px; display:flex; gap:16px; flex-wrap:wrap;">
+    <a href="pilotos-online.html" class="back-link" style="display:inline-flex;">
+     <svg style="width:14px;height:14px; transform:scaleX(-1)"><use href="#ic-arrow"/></svg>
+     <span>Volver a pilotos en línea</span>
+    </a>
+    <a href="todos-pilotos.html" class="back-link" style="display:inline-flex;">
+     <svg style="width:14px;height:14px; transform:scaleX(-1)"><use href="#ic-arrow"/></svg>
+     <span>Volver a la lista de pilotos</span>
+    </a>
+   </div>
+
+   <div id="pilot-header" style="margin-bottom:24px;">
+    <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+     <h2 id="p-callsign" style="margin:0; color:var(--gold); font-size:28px;">—</h2>
+     <span id="p-status" class="pilot-status offline" style="font-size:13px;"><span class="dot"></span>Cargando…</span>
+    </div>
+    <p id="p-name" style="margin:8px 0 4px; font-size:18px; color:var(--ivory);">—</p>
+    <p id="p-meta" style="margin:0; font-size:13px; color:var(--muted);">—</p>
+    <p id="p-cid" style="margin:4px 0 0; font-size:13px; color:var(--blue-light);"><a id="p-cid-link" href="#" target="_blank" rel="noopener" style="color:var(--blue-light);text-decoration:none;border-bottom:1px dotted rgba(0,210,255,0.3);">CID —</a></p>
+   </div>
+
+   <div id="pilot-stats" style="margin-bottom:24px; display:none;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;padding:16px;background:var(--card-bg);border:1px solid var(--line);border-radius:2px;">
+     <div style="padding:8px 0;text-align:center;">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Horas voladas</div>
+      <b id="stat-hours" style="color:var(--gold);font-size:18px;font-family:'Oswald',sans-serif;">—</b>
+     </div>
+      <div id="stat-last-block" style="padding:8px 0;text-align:center;">
+       <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Último vuelo</div>
+       <b id="stat-lastflight" style="color:var(--ivory);font-size:14px;">—</b>
+       <div id="stat-last-detail" style="font-size:12px;color:var(--gold);margin-top:2px;font-weight:600;"></div>
+      </div>
+     <div style="padding:8px 0;text-align:center;">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Aeropuerto + usado</div>
+      <b id="stat-airport" style="color:var(--gold);font-size:18px;font-family:'Oswald',sans-serif;">—</b>
+     </div>
+     <div style="padding:8px 0;text-align:center;">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Avión + usado</div>
+      <div style="display:flex;justify-content:center;align-items:center;gap:6px;">
+       <b id="stat-aircraft" style="color:var(--gold);font-size:18px;font-family:'Oswald',sans-serif;">—</b>
+       <span id="stat-ac-icon" style="display:inline-flex;align-items:center;height:22px;"></span>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div id="toggle-flights" onclick="var c=document.getElementById('last-flights-wrapper');var open=c.style.display!=='none';c.style.display=open?'none':'';this.querySelector('svg').style.transform=open?'rotate(0deg)':'rotate(180deg)';" style="cursor:pointer;justify-content:center;align-items:center;gap:8px;margin-bottom:12px;display:none;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);">
+     Últimos Vuelos <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform 0.2s;"><path d="M6 9l6 6 6-6"/></svg>
+   </div>
+    <div id="last-flights-wrapper" style="margin-bottom:24px;display:none;">
+     <div style="padding:12px 16px;background:var(--card-bg);border:1px solid var(--line);border-radius:2px;">
+     <div id="last-flights-header" style="display:grid;grid-template-columns:1.2fr 1fr 1.5fr 1fr;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);">
+      <span>Callsign</span><span>Aeronave</span><span>Vuelo</span><span>Fecha</span>
+     </div>
+     <div id="flights-list"></div>
+    </div>
+   </div>
+
+   <div id="pilot-map" style="height:350px; width:100%; margin-bottom:24px; position:relative; border:1px solid rgba(0,210,255,0.2); background:#080d14; border-radius:2px; display:none;"></div>
+
+   <div id="pilot-details" style="margin-bottom:24px;"></div>
+
+   <div id="pilot-offline" style="display:none; text-align:center; padding:48px 24px; color:var(--muted); font-size:14px;">
+    No está volando en este momento.
+   </div>
+
+   <div id="pilot-error" style="display:none; text-align:center; padding:48px 24px; color:#f87171; font-size:14px;">
+    No se pudo encontrar el piloto solicitado.
+   </div>
+  </div>
+ </section>
+
+</main>
+
+<footer id="footer">
+ <div class="wrap">
+  <div class="foot-grid">
+    <div class="foot-brand">
+     <img src="../img/Logo FAAV/Logo Faav.png" alt="Escudo FAAV" style="height:50px;width:auto;">
+     <div>
+     <b style="font-family:'Oswald',sans-serif; letter-spacing:0.03em; display:block;">FAAV - VSOA</b>
+     <span style="font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.03em; color:var(--muted); display:block; margin-top:4px; max-width:280px;">FUERZA AÉREA ARGENTINA VIRTUAL - VATSIM SPECIAL OPERATION ASOCIATED</span>
+     <p>Comunidad de simulación aérea sin fines de lucro, con presencia federal en brigadas de todo el país.</p>
+    </div>
+   </div>
+   <div class="foot-col">
+    <h5>Institución</h5>
+    <a href="index.html#mision">Bienvenida</a>
+    <a href="index.html#brigadas">Brigadas</a>
+    <a href="reglamento.html">Reglamento</a>
+   </div>
+   <div class="foot-col">
+    <h5>Operaciones</h5>
+    <a href="index.html#pilotos">Sala de pilotos</a>
+   </div>
+   <div class="foot-col">
+    <h5>Redes</h5>
+    <a href="https://www.vatsim.net/" target="_blank" rel="noopener">VATSIM</a>
+    <a href="https://www.argentina.gob.ar/fuerzaaerea" target="_blank" rel="noopener">FAA oficial</a>
+   </div>
+  </div>
+  <div class="foot-bottom">
+   <p class="foot-legal">La FAAV no posee ningún tipo de relación con el organismo oficial de la Fuerza Aérea de la República Argentina. Sitio de entretenimiento de aviación virtual · © 2005–2026 FAAV.</p>
+   <div class="foot-social">
+    <a href="https://www.instagram.com/faav_arg/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-insta"/></svg></a>
+    <a href="https://www.youtube.com/@faav_arg" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#ic-yt"/></svg></a>
+    <a href="https://www.facebook.com/FuerzaAereaArgentinaVirtual/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#ic-fb"/></svg></a>
+   </div>
+  </div>
+ </div>
+</footer>
+
+<script src="../JS/script.js"></script>
+<script>
+(function(){
+  var PILOTS = window.PILOTS || [];
+  var params = new URLSearchParams(window.location.search);
+  var cid = parseInt(params.get('cid'), 10);
+  if(!cid){ document.getElementById('pilot-error').style.display = 'block'; return; }
+
+  var pilot = PILOTS.find(function(p){ return p.cid === cid; });
+  if(!pilot){
+    document.getElementById('pilot-error').style.display = 'block';
+    document.title = 'Piloto no encontrado · FAAV';
+    return;
+  }
+
+  var callsignEl = document.getElementById('p-callsign');
+  var nameEl = document.getElementById('p-name');
+  var metaEl = document.getElementById('p-meta');
+  var cidEl = document.getElementById('p-cid');
+  var statusEl = document.getElementById('p-status');
+  var mapEl = document.getElementById('pilot-map');
+  var detailsEl = document.getElementById('pilot-details');
+  var offlineEl = document.getElementById('pilot-offline');
+
+  var statsEl = document.getElementById('pilot-stats');
+  var statHours = document.getElementById('stat-hours');
+  var statLast = document.getElementById('stat-lastflight');
+  var statLastDetail = document.getElementById('stat-last-detail');
+  var statAirport = document.getElementById('stat-airport');
+  var statAircraft = document.getElementById('stat-aircraft');
+
+  document.title = pilot.callsign + ' · ' + pilot.name + ' · FAAV';
+  callsignEl.textContent = pilot.callsign || '—';
+  nameEl.textContent = pilot.name || '—';
+
+  var metaParts = [];
+  if(pilot.indicativo) metaParts.push(pilot.indicativo);
+  if(pilot.brigade) metaParts.push(pilot.brigade);
+  metaEl.textContent = metaParts.join(' · ') || '—';
+  var cidLink = document.getElementById('p-cid-link');
+  if(cidLink && pilot.cid){
+    cidLink.textContent = 'CID ' + pilot.cid;
+    cidLink.href = 'https://vatsim.net/members/' + pilot.cid;
+  }
+
+  function pad2(n){ return n < 10 ? '0' + n : n; }
+
+  var statsCache = null;
+
+  function loadStats(){
+    try {
+      statsEl.style.display = 'block';
+      if(statsCache){
+        var d = statsCache[pilot.cid];
+        if(d){ applyStats(d); return; }
+      }
+      statHours.textContent = 'Cargando…';
+      statLast.textContent = 'Cargando…';
+      fetch('../data/stats.json').then(function(r){
+        if(!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      }).then(function(data){
+        statsCache = data;
+        var d = data[pilot.cid];
+        if(d){ applyStats(d); }
+        else{
+          statHours.textContent = '—';
+          statLast.textContent = 'Sin datos';
+        }
+      }).catch(function(){
+        statHours.textContent = '—';
+        statLast.textContent = 'Error al cargar';
+      });
+    } catch(e) { console.error('loadStats error:', e); }
+  }
+
+  function applyStats(data){
+    statHours.textContent = data.hours;
+    statLast.textContent = data.last;
+    document.getElementById('stat-last-detail').innerHTML = data.lastDetail || '';
+    statAirport.textContent = data.airport;
+    statAircraft.textContent = data.aircraft;
+    if(data.aircraft !== '—'){
+      var acCode = data.aircraft.toLowerCase();
+      var iconPath = '../icons/aircraft/' + acCode + '.svg';
+      var iconContainer = document.getElementById('stat-ac-icon');
+      if(iconContainer){
+        fetch(iconPath).then(function(r){
+          if(!r.ok) throw Error();
+          return r.text();
+        }).then(function(svg){
+          iconContainer.innerHTML = svg.replace(/^<svg([^>]*)>/, '<svg$1 fill="currentColor" style="width:auto;height:22px;color:var(--gold);display:block;">');
+        }).catch(function(){
+          iconContainer.innerHTML = '';
+        });
+      }
+    }
+
+    var flightsEl = document.getElementById('flights-list');
+    var container = document.getElementById('last-flights-wrapper');
+    var toggleEl = document.getElementById('toggle-flights');
+    if(data.lastFlights && data.lastFlights.length && flightsEl && container){
+      flightsEl.innerHTML = data.lastFlights.map(function(f){
+        return '<div style="display:grid;grid-template-columns:1.2fr 1fr 1.5fr 1fr;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;color:var(--ivory);">' +
+          '<span style="color:var(--gold);font-weight:500;">' + f.callsign + '</span>' +
+          '<span>' + f.aircraft + '</span>' +
+          '<span style="color:var(--blue-light);">' + f.route + '</span>' +
+          '<span style="color:var(--muted);">' + f.date + '</span>' +
+          '</div>';
+      }).join('');
+      if(toggleEl){ toggleEl.style.display = 'flex'; }
+    }
+  }
+  loadStats();
+
+  if(!pilot.cid){
+    statusEl.className = 'pilot-status offline';
+    statusEl.innerHTML = '<span class="dot"></span>Sin conexión a VATSIM';
+    offlineEl.style.display = 'block';
+    return;
+  }
+
+  var pilotMap = null;
+  var pilotMarker = null;
+
+  function loadData(){
+    fetch('https://data.vatsim.net/v3/vatsim-data.json')
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var pilots = data.pilots || [];
+        var live = pilots.find(function(lp){ return lp.cid === cid; });
+
+        if(!live){
+          statusEl.className = 'pilot-status offline';
+          statusEl.innerHTML = '<span class="dot"></span>Sin conexión';
+          mapEl.style.display = 'none';
+          offlineEl.style.display = 'block';
+          if(detailsEl) detailsEl.innerHTML = '';
+          if(pilotMarker && pilotMap){ pilotMap.removeLayer(pilotMarker); pilotMarker = null; }
+          return;
+        }
+
+        statusEl.className = 'pilot-status online';
+        statusEl.innerHTML = '<span class="dot"></span>En vuelo';
+        offlineEl.style.display = 'none';
+
+        var fp = live.flight_plan;
+        var heading = live.heading || 0;
+        var onGround = (live.groundspeed || 0) < 40 && (live.altitude || 0) < 1000;
+        var aircraft = fp && fp.aircraft_short ? fp.aircraft_short : '—';
+        var route = fp ? ((fp.departure || '????') + ' → ' + (fp.arrival || '????')) : 'Sin plan de vuelo';
+        var altitude = onGround ? 'Suelo' : Math.round(live.altitude || 0).toLocaleString('es-AR') + ' ft';
+        var speed = (live.groundspeed || 0) + ' kt';
+        var squawk = live.transponder || '----';
+
+        detailsEl.innerHTML =
+          '<div class="vm-popup-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:16px;background:var(--card-bg);border:1px solid var(--line);border-radius:2px;">' +
+          '<div class="vm-popup-cell"><span>Callsign VATSIM</span><b>' + (live.callsign || '—') + '</b></div>' +
+          '<div class="vm-popup-cell"><span>Aeronave</span><b>' + aircraft + '</b></div>' +
+          '<div class="vm-popup-cell"><span>Ruta</span><b>' + route + '</b></div>' +
+          '<div class="vm-popup-cell"><span>Altitud</span><b>' + altitude + '</b></div>' +
+          '<div class="vm-popup-cell"><span>Velocidad</span><b>' + speed + '</b></div>' +
+          '<div class="vm-popup-cell"><span>Rumbo</span><b>' + Math.round(heading) + '°</b></div>' +
+          '<div class="vm-popup-cell"><span>Squawk</span><b>' + squawk + '</b></div>' +
+          '</div>';
+
+        mapEl.style.display = 'block';
+        if(!pilotMap){
+          pilotMap = L.map('pilot-map', { attributionControl: false, zoomControl: false }).setView([live.latitude, live.longitude], 8);
+          L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(pilotMap);
+          L.control.zoom({ position: 'bottomright' }).addTo(pilotMap);
+        }
+        pilotMap.setView([live.latitude, live.longitude], 8);
+        if(pilotMarker) pilotMap.removeLayer(pilotMarker);
+        pilotMarker = L.marker([live.latitude, live.longitude], {
+          icon: L.divIcon({
+            className: 'vatsim-marker',
+            html: '<div class="vm-plane" style="transform:rotate(' + heading + 'deg);"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2l9 7-2 1-7-3-7 3-2-1 9-7z"/></svg></div>',
+            iconSize: [0, 0],
+            iconAnchor: [12, 12]
+          })
+        }).addTo(pilotMap);
+      })
+      .catch(function(){
+        statusEl.className = 'pilot-status offline';
+        statusEl.innerHTML = '<span class="dot"></span>Error al conectar con VATSIM';
+      });
+  }
+
+  loadData();
+  setInterval(loadData, 60000);
+})();
+</script>
+
+</body>
+</html>

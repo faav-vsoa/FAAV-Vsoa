@@ -1,0 +1,60 @@
+/* ---------- brigada page ---------- */
+.brigada-page{padding-top:100px;}
+.brigada-hero{
+  padding:60px 0 40px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(13,26,48,0.6), transparent);
+}
+.brigada-header{display:flex; align-items:center; gap:32px; margin-top:24px;}
+.brigada-num{
+  font-family:'Oswald',sans-serif; font-size:72px; color:var(--gold);
+  line-height:1; letter-spacing:0.02em;
+}
+.brigada-header h1{font-size:clamp(28px,4vw,42px); margin-bottom:8px;}
+.brigada-header h1 em{font-style:normal; color:var(--blue-light);}
+.brigada-icao{font-family:'JetBrains Mono',monospace; font-size:13px; color:var(--muted); letter-spacing:0.08em;}
+
+.brigada-content{padding:80px 0;}
+.brigada-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;}
+.brigada-info p{color:#c7d2e2; font-size:16px; margin-bottom:16px; max-width:520px;}
+.brigada-stats{display:flex; gap:32px; margin-top:32px; padding-top:24px; border-top:1px solid var(--line); justify-content:center;}
+.brigada-stat{display:flex; flex-direction:column; gap:4px; align-items:center;}
+.brigada-stat-num{font-family:'Oswald',sans-serif; font-size:20px; color:var(--ivory);}
+.brigada-stat-label{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase;}
+
+.brigada-image{border:1px solid var(--line-strong); background:var(--panel);}
+.brigada-image img{display:block; width:100%; height:auto;}
+
+.brigada-map-section{padding:0 0 80px;}
+#brigada-map{overflow:hidden;position:relative;border:1px solid var(--line-strong);}
+.leaflet-container img.leaflet-tile{max-width:none !important;}
+
+/* Scroll horizontal para lista de brigadas */
+.brig-row{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:16px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding-bottom:16px;
+  cursor:grab;
+  user-select:none;
+  -webkit-user-select:none;
+}
+.brig-row::-webkit-scrollbar{height:6px;}
+.brig-row::-webkit-scrollbar-track{background:var(--panel); border-radius:3px;}
+.brig-row::-webkit-scrollbar-thumb{background:var(--line-strong); border-radius:3px;}
+.brig-row::-webkit-scrollbar-thumb:hover{background:var(--gold);}
+.brig-row.grabbing{cursor:grabbing;}
+.brig{
+  flex:0 0 auto;
+  min-width:160px;
+}
+
+
+@media (max-width:760px){
+  .brigada-grid{grid-template-columns:1fr;}
+  .brigada-header{flex-direction:column; align-items:flex-start; gap:16px;}
+  .brigada-num{font-size:48px;}
+  .brigada-stats{flex-direction:column; gap:16px;}
+}

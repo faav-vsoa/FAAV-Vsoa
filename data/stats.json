@@ -1,0 +1,920 @@
+{
+  "844904": {
+    "hours": "173h 59m",
+    "last": "WOLF34 · 16 de may de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">ZZZZ</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">ESPA</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "airport": "SACO",
+    "aircraft": "C172",
+    "lastFlights": [
+      {
+        "callsign": "WOLF34",
+        "aircraft": "F16",
+        "route": "ZZZZ → ESPA",
+        "date": "16 de may de 2026"
+      },
+      {
+        "callsign": "RAPTOR",
+        "aircraft": "—",
+        "route": "—",
+        "date": "15 de may de 2026"
+      },
+      {
+        "callsign": "CONDR13",
+        "aircraft": "—",
+        "route": "—",
+        "date": "01 de dic de 2025"
+      },
+      {
+        "callsign": "CONDR1",
+        "aircraft": "—",
+        "route": "—",
+        "date": "01 de dic de 2025"
+      },
+      {
+        "callsign": "CONDR14",
+        "aircraft": "—",
+        "route": "—",
+        "date": "29 de nov de 2025"
+      },
+      {
+        "callsign": "CONDR14",
+        "aircraft": "—",
+        "route": "—",
+        "date": "28 de nov de 2025"
+      }
+    ]
+  },
+  "1282428": {
+    "hours": "810h 4m",
+    "last": "LAN542 · 26 de jul de 2026",
+    "lastDetail": "",
+    "airport": "SAEZ",
+    "aircraft": "B789",
+    "lastFlights": [
+      {
+        "callsign": "LAN542",
+        "aircraft": "—",
+        "route": "—",
+        "date": "26 de jul de 2026"
+      },
+      {
+        "callsign": "P4BDL",
+        "aircraft": "B789",
+        "route": "LIRF → SAEZ",
+        "date": "18 de jul de 2026"
+      },
+      {
+        "callsign": "TC66",
+        "aircraft": "—",
+        "route": "—",
+        "date": "17 de jul de 2026"
+      },
+      {
+        "callsign": "TC66",
+        "aircraft": "C130",
+        "route": "SAWB → YMML",
+        "date": "11 de jul de 2026"
+      },
+      {
+        "callsign": "PUMA",
+        "aircraft": "—",
+        "route": "—",
+        "date": "10 de jul de 2026"
+      },
+      {
+        "callsign": "CONDOR2",
+        "aircraft": "F16",
+        "route": "SAOC → SAOC",
+        "date": "09 de jul de 2026"
+      },
+      {
+        "callsign": "TC66",
+        "aircraft": "—",
+        "route": "—",
+        "date": "08 de jul de 2026"
+      },
+      {
+        "callsign": "TC66",
+        "aircraft": "C130",
+        "route": "SAWG → SAWG",
+        "date": "05 de jul de 2026"
+      }
+    ]
+  },
+  "1462350": {
+    "hours": "102h 35m",
+    "last": "TIGER3 · 24 de jul de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "airport": "LPPR",
+    "aircraft": "C25B",
+    "lastFlights": [
+      {
+        "callsign": "TIGER3",
+        "aircraft": "F16",
+        "route": "YPDN → YPDN",
+        "date": "24 de jul de 2026"
+      },
+      {
+        "callsign": "LVIZQ",
+        "aircraft": "C25B",
+        "route": "SAZM → SADF",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "TIV70",
+        "aircraft": "C25B",
+        "route": "LEMG → LPPR",
+        "date": "12 de jun de 2026"
+      },
+      {
+        "callsign": "TIV70",
+        "aircraft": "—",
+        "route": "—",
+        "date": "10 de jun de 2026"
+      },
+      {
+        "callsign": "N70VM",
+        "aircraft": "—",
+        "route": "—",
+        "date": "10 de jun de 2026"
+      },
+      {
+        "callsign": "N825MD",
+        "aircraft": "C25B",
+        "route": "LPPR → LFBD",
+        "date": "26 de may de 2026"
+      },
+      {
+        "callsign": "N825MD",
+        "aircraft": "—",
+        "route": "—",
+        "date": "22 de abr de 2026"
+      },
+      {
+        "callsign": "N825MD",
+        "aircraft": "C25B",
+        "route": "LERS → LFBD",
+        "date": "21 de abr de 2026"
+      },
+      {
+        "callsign": "N825MD",
+        "aircraft": "C25B",
+        "route": "LERS → LEMG",
+        "date": "21 de abr de 2026"
+      }
+    ]
+  },
+  "1500943": {
+    "hours": "25h 6m",
+    "last": "HALCON2 · 06 de abr de 2025",
+    "lastDetail": "",
+    "airport": "SADP",
+    "aircraft": "A4",
+    "lastFlights": [
+      {
+        "callsign": "HALCON2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "06 de abr de 2025"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "05 de abr de 2025"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "A4",
+        "route": "SADP → SADP",
+        "date": "03 de abr de 2025"
+      },
+      {
+        "callsign": "HALCON1",
+        "aircraft": "A4",
+        "route": "SADP → SADP",
+        "date": "30 de mar de 2025"
+      },
+      {
+        "callsign": "PUMA2",
+        "aircraft": "A4",
+        "route": "SAOR → SADP",
+        "date": "11 de mar de 2025"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "19 de dic de 2024"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "25 de oct de 2024"
+      },
+      {
+        "callsign": "MAZO2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "18 de sept de 2024"
+      }
+    ]
+  },
+  "1502178": {
+    "hours": "2791h 14m",
+    "last": "TIGER4 · 24 de jul de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "airport": "SABE",
+    "aircraft": "F16",
+    "lastFlights": [
+      {
+        "callsign": "TIGER4",
+        "aircraft": "F16",
+        "route": "YPDN → YPDN",
+        "date": "24 de jul de 2026"
+      },
+      {
+        "callsign": "FAG230",
+        "aircraft": "B737",
+        "route": "PHNL → PKMJ",
+        "date": "24 de jul de 2026"
+      },
+      {
+        "callsign": "DWI6260",
+        "aircraft": "B38M",
+        "route": "MDPC → SAEZ",
+        "date": "22 de jul de 2026"
+      },
+      {
+        "callsign": "FAG230",
+        "aircraft": "F28",
+        "route": "SADP → SABE",
+        "date": "21 de jul de 2026"
+      },
+      {
+        "callsign": "QCL101",
+        "aircraft": "B722",
+        "route": "SUMU → SGAS",
+        "date": "19 de jul de 2026"
+      },
+      {
+        "callsign": "ARG1612",
+        "aircraft": "B722",
+        "route": "SUMU → SGAS",
+        "date": "19 de jul de 2026"
+      },
+      {
+        "callsign": "CONDR10",
+        "aircraft": "F16",
+        "route": "SAOC → SAOC",
+        "date": "19 de jul de 2026"
+      },
+      {
+        "callsign": "ITY680",
+        "aircraft": "A339",
+        "route": "LIRF → SAEZ",
+        "date": "18 de jul de 2026"
+      }
+    ]
+  },
+  "1562806": {
+    "hours": "448h 26m",
+    "last": "TIGER2 · 24 de jul de 2026",
+    "lastDetail": "",
+    "airport": "SAOC",
+    "aircraft": "F16",
+    "lastFlights": [
+      {
+        "callsign": "TIGER2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "24 de jul de 2026"
+      },
+      {
+        "callsign": "CONDOR3",
+        "aircraft": "F16",
+        "route": "SAOC → SAOC",
+        "date": "09 de jul de 2026"
+      },
+      {
+        "callsign": "HURON4",
+        "aircraft": "—",
+        "route": "—",
+        "date": "03 de jul de 2026"
+      },
+      {
+        "callsign": "CONDOR",
+        "aircraft": "—",
+        "route": "—",
+        "date": "25 de jun de 2026"
+      },
+      {
+        "callsign": "FAG212",
+        "aircraft": "—",
+        "route": "—",
+        "date": "25 de jun de 2026"
+      },
+      {
+        "callsign": "CONDOR2",
+        "aircraft": "F16",
+        "route": "SAAP → SAOC",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "CONDR11",
+        "aircraft": "F16",
+        "route": "SAAP → SAOC",
+        "date": "23 de jun de 2026"
+      }
+    ]
+  },
+  "1575754": {
+    "hours": "817h 24m",
+    "last": "TEZ1601 · 18 de jun de 2026",
+    "lastDetail": "",
+    "airport": "EDDP",
+    "aircraft": "B752",
+    "lastFlights": [
+      {
+        "callsign": "TEZ1601",
+        "aircraft": "—",
+        "route": "—",
+        "date": "18 de jun de 2026"
+      },
+      {
+        "callsign": "SMR217",
+        "aircraft": "—",
+        "route": "—",
+        "date": "17 de jun de 2026"
+      },
+      {
+        "callsign": "AHY525",
+        "aircraft": "—",
+        "route": "—",
+        "date": "16 de jun de 2026"
+      },
+      {
+        "callsign": "HYT9111",
+        "aircraft": "—",
+        "route": "—",
+        "date": "11 de jun de 2026"
+      },
+      {
+        "callsign": "THY5VH",
+        "aircraft": "—",
+        "route": "—",
+        "date": "10 de jun de 2026"
+      },
+      {
+        "callsign": "THY5VH",
+        "aircraft": "B739",
+        "route": "LTFM → UBBB",
+        "date": "10 de jun de 2026"
+      },
+      {
+        "callsign": "MNB9410",
+        "aircraft": "A321",
+        "route": "EDDP → LTFM",
+        "date": "16 de may de 2026"
+      },
+      {
+        "callsign": "BCS2211",
+        "aircraft": "B752",
+        "route": "EGSS → EDDP",
+        "date": "15 de may de 2026"
+      }
+    ]
+  },
+  "1665183": {
+    "hours": "158h 12m",
+    "last": "DELTA · 08 de jun de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAZT</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZT</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "airport": "SAZT",
+    "aircraft": "F16",
+    "lastFlights": [
+      {
+        "callsign": "DELTA",
+        "aircraft": "F16",
+        "route": "SAZT → SAZT",
+        "date": "08 de jun de 2026"
+      },
+      {
+        "callsign": "TRUENO2",
+        "aircraft": "F16",
+        "route": "SAZT → SAZT",
+        "date": "05 de jun de 2026"
+      },
+      {
+        "callsign": "WOLF33",
+        "aircraft": "F16",
+        "route": "ZZZZ → ESPA",
+        "date": "16 de may de 2026"
+      },
+      {
+        "callsign": "WOLF33",
+        "aircraft": "F16",
+        "route": "ESPA → ZZZZ",
+        "date": "16 de may de 2026"
+      },
+      {
+        "callsign": "WOLF43",
+        "aircraft": "F16",
+        "route": "ESPA → ZZZZ",
+        "date": "16 de may de 2026"
+      },
+      {
+        "callsign": "DELTA",
+        "aircraft": "—",
+        "route": "—",
+        "date": "15 de may de 2026"
+      },
+      {
+        "callsign": "DELTA",
+        "aircraft": "—",
+        "route": "—",
+        "date": "11 de may de 2026"
+      }
+    ]
+  },
+  "1665608": {
+    "hours": "90h 16m",
+    "last": "CHANCHA · 06 de feb de 2026",
+    "lastDetail": "",
+    "airport": "SADP",
+    "aircraft": "C130",
+    "lastFlights": [
+      {
+        "callsign": "CHANCHA",
+        "aircraft": "—",
+        "route": "—",
+        "date": "06 de feb de 2026"
+      },
+      {
+        "callsign": "MAMUT4",
+        "aircraft": "C130",
+        "route": "SAZT → SAZT",
+        "date": "13 de dic de 2025"
+      },
+      {
+        "callsign": "FAG229",
+        "aircraft": "C130",
+        "route": "SBRJ → SBSG",
+        "date": "14 de nov de 2025"
+      },
+      {
+        "callsign": "FAG229",
+        "aircraft": "—",
+        "route": "—",
+        "date": "14 de nov de 2025"
+      },
+      {
+        "callsign": "FAG229",
+        "aircraft": "C130",
+        "route": "SADP → SBRJ",
+        "date": "11 de nov de 2025"
+      },
+      {
+        "callsign": "CUERVO",
+        "aircraft": "MIR2",
+        "route": "SPHO → SPJC",
+        "date": "19 de oct de 2025"
+      }
+    ]
+  },
+  "1666659": {
+    "hours": "119h 17m",
+    "last": "HALCON1 · 01 de may de 2026",
+    "lastDetail": "",
+    "airport": "SADP",
+    "aircraft": "A4",
+    "lastFlights": [
+      {
+        "callsign": "HALCON1",
+        "aircraft": "—",
+        "route": "—",
+        "date": "01 de may de 2026"
+      },
+      {
+        "callsign": "HALCON1",
+        "aircraft": "A4",
+        "route": "SAOR → SAOC",
+        "date": "05 de dic de 2025"
+      },
+      {
+        "callsign": "MIRAGE5",
+        "aircraft": "—",
+        "route": "—",
+        "date": "20 de nov de 2025"
+      },
+      {
+        "callsign": "FIERRO4",
+        "aircraft": "MIRA",
+        "route": "SAWC → SAWG",
+        "date": "31 de oct de 2025"
+      },
+      {
+        "callsign": "HALCON3",
+        "aircraft": "A4",
+        "route": "SAWG → SAOR",
+        "date": "21 de sept de 2025"
+      },
+      {
+        "callsign": "HALCON1",
+        "aircraft": "A4",
+        "route": "SARI → SAOR",
+        "date": "19 de sept de 2025"
+      },
+      {
+        "callsign": "HALCON1",
+        "aircraft": "A4",
+        "route": "SBAN → SBCG",
+        "date": "09 de sept de 2025"
+      },
+      {
+        "callsign": "HALCON1",
+        "aircraft": "A4",
+        "route": "SADP → SADP",
+        "date": "06 de abr de 2025"
+      }
+    ]
+  },
+  "1712199": {
+    "hours": "334h 17m",
+    "last": "TIGER1 · 24 de jul de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "airport": "SADP",
+    "aircraft": "F16",
+    "lastFlights": [
+      {
+        "callsign": "TIGER1",
+        "aircraft": "F16",
+        "route": "YPDN → YPDN",
+        "date": "24 de jul de 2026"
+      },
+      {
+        "callsign": "CONDOR1",
+        "aircraft": "F16",
+        "route": "SAOC → SAOC",
+        "date": "09 de jul de 2026"
+      },
+      {
+        "callsign": "HURON3",
+        "aircraft": "—",
+        "route": "—",
+        "date": "03 de jul de 2026"
+      },
+      {
+        "callsign": "FAG236",
+        "aircraft": "—",
+        "route": "—",
+        "date": "02 de jul de 2026"
+      },
+      {
+        "callsign": "DAGA",
+        "aircraft": "IA63",
+        "route": "SAOR → SAME",
+        "date": "25 de jun de 2026"
+      },
+      {
+        "callsign": "CONDOR1",
+        "aircraft": "F16",
+        "route": "SAAP → SAOC",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "DAGA",
+        "aircraft": "F16",
+        "route": "SAAP → SAOC",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "TANGO",
+        "aircraft": "F16",
+        "route": "SAAP → SAOC",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "CONDR",
+        "aircraft": "F16",
+        "route": "SAAP → SAOC",
+        "date": "23 de jun de 2026"
+      }
+    ]
+  },
+  "1764792": {
+    "hours": "43h 20m",
+    "last": "BUHO · 20 de jun de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAAP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAAP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA58</span>",
+    "airport": "SAAP",
+    "aircraft": "TUCA",
+    "lastFlights": [
+      {
+        "callsign": "BUHO",
+        "aircraft": "IA58",
+        "route": "SAAP → SAAP",
+        "date": "20 de jun de 2026"
+      }
+    ]
+  },
+  "1785540": {
+    "hours": "143h 12m",
+    "last": "FAG256 · 06 de jul de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SARE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SPJC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">LJ35</span>",
+    "airport": "SAAP",
+    "aircraft": "IA63",
+    "lastFlights": [
+      {
+        "callsign": "FAG256",
+        "aircraft": "LJ35",
+        "route": "SARE → SPJC",
+        "date": "06 de jul de 2026"
+      },
+      {
+        "callsign": "FAG256",
+        "aircraft": "LJ35",
+        "route": "SARE → SPJC",
+        "date": "05 de jul de 2026"
+      },
+      {
+        "callsign": "FAG256",
+        "aircraft": "LJ35",
+        "route": "SGAS → SARE",
+        "date": "05 de jul de 2026"
+      },
+      {
+        "callsign": "PAMPA",
+        "aircraft": "IA63",
+        "route": "SAAP → SAAP",
+        "date": "04 de jul de 2026"
+      },
+      {
+        "callsign": "FAG256",
+        "aircraft": "B737",
+        "route": "SABE → SADP",
+        "date": "03 de jul de 2026"
+      },
+      {
+        "callsign": "AE256",
+        "aircraft": "TEX2",
+        "route": "SAOR → SAME",
+        "date": "28 de jun de 2026"
+      },
+      {
+        "callsign": "FAG256",
+        "aircraft": "E135",
+        "route": "SADP → SAZB",
+        "date": "27 de jun de 2026"
+      }
+    ]
+  },
+  "1831103": {
+    "hours": "11h 51m",
+    "last": "ZORRO2 · 29 de jun de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SACE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
+    "airport": "SAAP",
+    "aircraft": "A4AR",
+    "lastFlights": [
+      {
+        "callsign": "ZORRO2",
+        "aircraft": "A4AR",
+        "route": "SAOR → SACE",
+        "date": "29 de jun de 2026"
+      },
+      {
+        "callsign": "FAG250",
+        "aircraft": "A4AR",
+        "route": "SAOR → SACE",
+        "date": "29 de jun de 2026"
+      },
+      {
+        "callsign": "LINCE",
+        "aircraft": "A4AR",
+        "route": "SAME → SACO",
+        "date": "27 de jun de 2026"
+      },
+      {
+        "callsign": "ZORRO2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "20 de jun de 2026"
+      },
+      {
+        "callsign": "DELTA",
+        "aircraft": "A4",
+        "route": "SAAP → SAAP",
+        "date": "20 de jun de 2026"
+      },
+      {
+        "callsign": "FAG250",
+        "aircraft": "—",
+        "route": "—",
+        "date": "20 de jun de 2026"
+      }
+    ]
+  },
+  "1835877": {
+    "hours": "100h 36m",
+    "last": "FAG251 · 02 de jun de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAZM</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A20N</span>",
+    "airport": "SADP",
+    "aircraft": "C130",
+    "lastFlights": [
+      {
+        "callsign": "FAG251",
+        "aircraft": "A20N",
+        "route": "SAZM → SADP",
+        "date": "02 de jun de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "C130",
+        "route": "SADP → SAAP",
+        "date": "02 de jun de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "A20N",
+        "route": "SAAP → SATR",
+        "date": "01 de jun de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "A20N",
+        "route": "SADP → SAAP",
+        "date": "31 de may de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "C130",
+        "route": "SADP → SADL",
+        "date": "28 de may de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "C152",
+        "route": "SADM → SADM",
+        "date": "27 de may de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "C130",
+        "route": "SADP → SAZM",
+        "date": "26 de may de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "C130",
+        "route": "SATR → SADP",
+        "date": "25 de may de 2026"
+      },
+      {
+        "callsign": "FAG251",
+        "aircraft": "—",
+        "route": "—",
+        "date": "22 de may de 2026"
+      },
+      {
+        "callsign": "CONDOR3",
+        "aircraft": "—",
+        "route": "—",
+        "date": "20 de may de 2026"
+      }
+    ]
+  },
+  "1910520": {
+    "hours": "12h 57m",
+    "last": "AE254 · 30 de jun de 2026",
+    "lastDetail": "",
+    "airport": "SAAP",
+    "aircraft": "TEX2",
+    "lastFlights": [
+      {
+        "callsign": "AE254",
+        "aircraft": "—",
+        "route": "—",
+        "date": "30 de jun de 2026"
+      },
+      {
+        "callsign": "AE254",
+        "aircraft": "—",
+        "route": "—",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "AE254",
+        "aircraft": "TEX2",
+        "route": "SADP → SAZT",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "AE254",
+        "aircraft": "IA63",
+        "route": "SADP → SAME",
+        "date": "13 de jun de 2026"
+      },
+      {
+        "callsign": "PAMPA2",
+        "aircraft": "IA63",
+        "route": "SAAP → SCEL",
+        "date": "12 de jun de 2026"
+      },
+      {
+        "callsign": "PAMPA2",
+        "aircraft": "IA63",
+        "route": "SAAP → SCEL",
+        "date": "11 de jun de 2026"
+      }
+    ]
+  },
+  "1974289": {
+    "hours": "31h 19m",
+    "last": "ARG1518 · 26 de jul de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SACO</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B738</span>",
+    "airport": "SACO",
+    "aircraft": "B738",
+    "lastFlights": [
+      {
+        "callsign": "ARG1518",
+        "aircraft": "B738",
+        "route": "SABE → SACO",
+        "date": "26 de jul de 2026"
+      },
+      {
+        "callsign": "FAG252",
+        "aircraft": "A4AR",
+        "route": "SASJ → SASJ",
+        "date": "04 de jul de 2026"
+      },
+      {
+        "callsign": "ZORRO",
+        "aircraft": "—",
+        "route": "—",
+        "date": "04 de jul de 2026"
+      }
+    ]
+  },
+  "2005108": {
+    "hours": "27h 10m",
+    "last": "FAG255 · 06 de jul de 2026",
+    "lastDetail": "",
+    "airport": "SADP",
+    "aircraft": "IA63",
+    "lastFlights": [
+      {
+        "callsign": "FAG255",
+        "aircraft": "—",
+        "route": "—",
+        "date": "06 de jul de 2026"
+      },
+      {
+        "callsign": "HURON2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "04 de jul de 2026"
+      },
+      {
+        "callsign": "FAG255",
+        "aircraft": "—",
+        "route": "—",
+        "date": "04 de jul de 2026"
+      },
+      {
+        "callsign": "FAG255",
+        "aircraft": "E135",
+        "route": "SADP → SAZB",
+        "date": "27 de jun de 2026"
+      },
+      {
+        "callsign": "AE255",
+        "aircraft": "—",
+        "route": "—",
+        "date": "25 de jun de 2026"
+      },
+      {
+        "callsign": "AE255",
+        "aircraft": "—",
+        "route": "—",
+        "date": "23 de jun de 2026"
+      },
+      {
+        "callsign": "AE255",
+        "aircraft": "—",
+        "route": "—",
+        "date": "22 de jun de 2026"
+      },
+      {
+        "callsign": "BUHO2",
+        "aircraft": "—",
+        "route": "—",
+        "date": "20 de jun de 2026"
+      }
+    ]
+  }
+}

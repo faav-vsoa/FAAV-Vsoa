@@ -131,9 +131,11 @@ function computeStats(historyResult, fpsRaw) {
     if (!seen[key]) { seen[key] = true; deduped.push(f); }
   }
 
-  // Filter: only keep flights with VSOA/FAAV.COM.AR in remark
+  // Filter: only keep flights with VSOA or FAAV in remark (case-insensitive)
   var filtered = deduped.filter(function(f) {
-    return f.remark && f.remark.includes('VSOA/FAAV.COM.AR');
+    if (!f.remark) return false;
+    var r = f.remark.toLowerCase();
+    return r.includes('vsoa') || r.includes('faav');
   });
 
   return {

@@ -113,11 +113,13 @@ function computeStats(historyResult, fpsRaw) {
     const ac = fp ? ((fp.aircraft || '').split('/')[0] || fp.aircraft) : '—';
     const route = fp ? ((fp.dep || '??') + ' → ' + (fp.arr || '??')) : '—';
     const d = new Date(s.start);
+    const remark = fp && fp.remarks ? fp.remarks : '';
     lastFlights.push({
       callsign: s.callsign || '—',
       aircraft: ac,
       route: route,
-      date: d.toLocaleDateString('es-AR', { day: '2-digit', month: 'short', year: 'numeric' })
+      date: d.toLocaleDateString('es-AR', { day: '2-digit', month: 'short', year: 'numeric' }),
+      remark: remark
     });
   }
 
@@ -129,13 +131,18 @@ function computeStats(historyResult, fpsRaw) {
     if (!seen[key]) { seen[key] = true; deduped.push(f); }
   }
 
+  // Filter: only keep flights with VSOA/FAAV.COM.AR in remark
+  var filtered = deduped.filter(function(f) {
+    return f.remark && f.remark.includes('VSOA/FAAV.COM.AR');
+  });
+
   return {
     hours: hoursStr,
     last: lastStr,
     lastDetail: lastDetailStr,
     airport: Object.keys(airportCount).sort((a, b) => airportCount[b] - airportCount[a])[0] || '—',
     aircraft: Object.keys(aircraftCount).sort((a, b) => aircraftCount[b] - aircraftCount[a])[0] || '—',
-    lastFlights: deduped.slice(0, 10)
+    lastFlights: filtered.slice(0, 10)
   };
 }
 

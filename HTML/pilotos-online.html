@@ -194,7 +194,7 @@
    online.forEach(function(p){
     var lv = live.find(function(lp){ return lp.cid === p.cid; });
     var fp = lv ? lv.flight_plan : null;
-    var route = fp ? (fp.departure || '????') + ' ? ' + (fp.arrival || '????') : 'Sin plan de vuelo';
+    var route = fp ? (fp.departure || '????') + ' → ' + (fp.arrival || '????') : 'Sin plan de vuelo';
     var aircraft = fp && fp.aircraft_short ? fp.aircraft_short : '—';
     var card = document.createElement('div');
     card.className = 'pilot-card lockframe pilot-online';

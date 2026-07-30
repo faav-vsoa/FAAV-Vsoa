@@ -428,8 +428,10 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .navlinks a:last-child{border-bottom:none;}
   .navlinks a:hover, .navlinks a:focus-visible{color:var(--blue-light);}
   .navlinks a::after{display:none;}
+  .navlinks .mobile-nav-btn{display:flex; border:1px solid var(--line-strong); border-radius:2px; justify-content:center; margin-top:4px; padding:12px 0; color:var(--ivory);}
+  .navlinks .mobile-nav-btn:hover{background:rgba(127,184,242,0.06); border-color:var(--blue-light);}
   
-  
+  .desktop-only{display:none;}
   .burger{display:flex; z-index:60;}
 }
 
@@ -442,6 +444,8 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
 
 @media (min-width:1201px){
   .mobile-menu-overlay{display:none;}
+  .desktop-only{display:inline-flex;}
+  .navlinks .mobile-nav-btn{display:none;}
 }
 @media (max-width:980px){
   .hero-grid{grid-template-columns:1fr; gap:64px;}

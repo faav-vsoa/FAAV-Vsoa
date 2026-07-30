@@ -396,29 +396,25 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
 
 @media (max-width:1200px){
   .navlinks{
-    position:fixed; top:0; left:0; bottom:0; width:320px; max-width:85vw;
-    background:var(--bg); border-right:1px solid var(--line);
-    flex-direction:column; align-items:flex-start; padding:100px 32px 40px; gap:12px;
-    transform:translateX(-100%); transition:transform .35s cubic-bezier(.25,.46,.45,.94);
+    position:fixed; top:0; right:0; bottom:0; width:100%; max-width:100vw;
+    background:var(--bg); border-left:1px solid var(--line);
+    flex-direction:column; align-items:stretch; padding:80px 24px 40px; gap:0;
+    transform:translateX(100%); transition:transform .35s cubic-bezier(.25,.46,.45,.94);
     z-index:50; overflow-y:auto;
-    box-shadow:4px 0 32px rgba(0,0,0,0.4);
+    box-shadow:-4px 0 32px rgba(0,0,0,0.4);
   }
   .navlinks.open{transform:translateX(0);}
   .navlinks a{
-    font-size:15px; padding:14px 0; width:100%;
+    font-size:15px; padding:16px 0; width:100%;
     border-bottom:1px solid var(--line-weak);
-    display:flex; align-items:center; gap:12px;
+    display:flex; align-items:center; gap:12px; justify-content:flex-start;
   }
   .navlinks a:hover, .navlinks a:focus-visible{color:var(--blue-light); background:rgba(127,184,242,0.06);}
   .navlinks a::after{display:none;}
   
-  .burger{display:flex; z-index:60;}
-  .navcta .btn-ghost{display:none;}
-  .navcta #navLogin{display:none;}
-  
   /* Login button inside mobile menu */
   .navlinks .mobile-login-btn{
-    display:inline-flex; align-items:center; gap:8px; margin-top:8px; padding:14px 0;
+    display:inline-flex; align-items:center; gap:8px; margin-top:8px; padding:16px 0;
     font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.1em;
     text-transform:uppercase; color:var(--ivory); border:1px solid var(--line-strong);
     border-radius:2px; width:100%; justify-content:center;
@@ -426,6 +422,10 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   }
   .navlinks .mobile-login-btn:hover{background:rgba(127,184,242,0.06); border-color:var(--blue-light);}
   .navlinks .mobile-login-btn svg{width:14px; height:14px;}
+  
+  .burger{display:flex; z-index:60;}
+  .navcta .btn-ghost{display:none;}
+  .navcta #navLogin{display:none;}
 }
 
 /* Burger animation */

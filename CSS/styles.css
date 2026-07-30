@@ -98,7 +98,10 @@ nav{
 
 @media (max-width:1200px){
   .header-links-row{justify-content:space-between; gap:16px;}
-  .brand-text{display:none;}
+  .brand{flex-direction:column; gap:2px;}
+  .brand-text{display:flex; align-items:center; text-align:center; line-height:1.2;}
+  .brand-text b{font-size:15px; letter-spacing:0.03em;}
+  .brand-text span{font-size:9.5px; max-width:180px;}
   .navcta #navLogin{display:none;}
   .navcta .btn-ghost{display:none;}
   .burger{display:flex; z-index:60;}
@@ -396,13 +399,17 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
 
 @media (max-width:1200px){
   .header-links-row{justify-content:space-between; gap:16px;}
-  .brand-text{display:none;}
+  .brand-text{display:flex; align-items:center; text-align:center; line-height:1.2;}
+  .brand-text b{font-size:15px; letter-spacing:0.03em;}
+  .brand-text span{font-size:9.5px; max-width:180px;}
   .navcta #navLogin{display:none;}
   .navcta .btn-ghost{display:none;}
   .burger{display:flex; z-index:60;}
 
   header{position:fixed; z-index:50;}
   nav{position:relative;}
+  .brand{flex-direction:column; gap:2px;}
+  .brand img{width:42px; height:42px;}
 
   .navlinks{
     position:absolute; top:100%; left:0; right:0;

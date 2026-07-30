@@ -276,7 +276,7 @@
         var acIcon = '../icons/aircraft/' + (f.aircraft || '').toLowerCase() + '.svg';
         return '<div style="display:grid;grid-template-columns:1.2fr 1fr 1.5fr 1fr 1.5fr;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;color:var(--ivory);">' +
           '<span style="color:var(--gold);font-weight:500;">' + f.callsign + '</span>' +
-          '<span style="display:inline-flex;align-items:center;gap:5px;">' + f.aircraft + '<img src="' + acIcon + '" style="height:14px;width:auto;vertical-align:middle;" onerror="this.style.display=\'none\'"></span>' +
+          '<span style="display:flex;align-items:center;justify-content:center;gap:5px;">' + f.aircraft + '<img src="' + acIcon + '" style="height:14px;width:auto;" onerror="this.style.display=\'none\'"></span>' +
           '<span style="color:var(--blue-light);">' + f.route + '</span>' +
           '<span style="color:var(--muted);">' + f.date + '</span>' +
           '<span style="color:var(--gold);font-size:11px;font-family:\'JetBrains Mono\',monospace;">' + (f.remark || '—') + '</span>' +

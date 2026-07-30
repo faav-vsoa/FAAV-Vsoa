@@ -12,6 +12,27 @@
         "route": "ZZZZ → ESPA",
         "date": "16 de may de 2026",
         "remark": "DOF/260516 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/WOLF31-34 FFLTEND VSOA/FAAV.COM.AR RMK/LOYAL ARROW /V/ RMK/OAT"
+      },
+      {
+        "callsign": "CONDR13",
+        "aircraft": "F16",
+        "route": "GCLP → GVAC",
+        "date": "01 de dic de 2025",
+        "remark": "DOF/251202 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA  STS/STATE FFLT/CONDR11-16 FFLTEND VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "CONDR1",
+        "aircraft": "F16",
+        "route": "GCLP → GVAC",
+        "date": "01 de dic de 2025",
+        "remark": "DOF/251202 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA  STS/STATE FFLT/CONDR11-16 FFLTEND VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "CONDR14",
+        "aircraft": "F16",
+        "route": "EKSP → LEZG",
+        "date": "28 de nov de 2025",
+        "remark": "DOF/251129 RMK/ARGENTINA AIR FORCE STS/STATE STS/MARSA  STS/STATE FFLT/CONDR11-16 FFLTEND VSOA/FAAV.COM.AR /V/"
       }
     ]
   },
@@ -50,6 +71,20 @@
         "callsign": "HALCON2",
         "aircraft": "A4",
         "route": "SADP → SADP",
+        "date": "06 de abr de 2025",
+        "remark": "DOF/250406 RMK/OPR/ARGENTINA AIR FORCE STS/MARSA STAYINFO/DEMO TACTICA DESFILE FFLT/HALCON1-2 FFLTEND RMK/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "A4",
+        "route": "SADP → SADP",
+        "date": "05 de abr de 2025",
+        "remark": "DOF/250405 RMK/OPR/ARGENTINA AIR FORCE STS/MARSA STAYINFO/DEMO TACTICA DESFILE FFLT/HALCON1-2 FFLTEND RMK/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "A4",
+        "route": "SADP → SADP",
         "date": "03 de abr de 2025",
         "remark": "DOF/250404 RMK/OPR/ARGENTINA AIR FORCE STS/MARSA STAYINFO/PRACTICA DESFILE FFLT/TUCAN1-2 FFLTEND RMK/FAAV.COM.AR /V/"
       },
@@ -66,6 +101,27 @@
         "route": "SAOR → SADP",
         "date": "11 de mar de 2025",
         "remark": "DOF/250312 EET/0040 OPR/FAG RMK/STS/MARSA FFLT/PUMA1-2 FFLTEND RMK/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "A4",
+        "route": "SACO → SACO",
+        "date": "19 de dic de 2024",
+        "remark": "DOF/241220 RMK/FAAV.COM.AR FFLT/HALCON1-3 FFLTEND STS/MARSA /V/"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "A4",
+        "route": "SAME → SAOR",
+        "date": "25 de oct de 2024",
+        "remark": "DOF/241025 RMK/FFLT/HALCON1-2 FFLTEND RMK/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "MAZO2",
+        "aircraft": "A4",
+        "route": "SAOR → SAOR",
+        "date": "18 de sept de 2024",
+        "remark": "DOF/240919 RMK/RMK/FAAV.COM.AR FFLT/MAZO1-2 FFLTEND /V/"
       }
     ]
   },
@@ -99,6 +155,41 @@
     "airport": "SAOC",
     "aircraft": "F16",
     "lastFlights": [
+      {
+        "callsign": "FAG212",
+        "aircraft": "F28",
+        "route": "SAVC → SAWG",
+        "date": "29 de jul de 2026",
+        "remark": "PBN/B3B4B5D3D4 DOF/260730 REG/TC53 OPR/FAG PER/B RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "TIGER2",
+        "aircraft": "F16",
+        "route": "YPDN → YPDN",
+        "date": "24 de jul de 2026",
+        "remark": "DOF/260724 REG/M-1020 OPR/FAG RMK/ARGENTINA AIR FORCE STS/MARSA FFLT/TIGER1-4 FFLTEND RMK/OPERATION PITCH BLACK VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HURON4",
+        "aircraft": "BE20",
+        "route": "SAAP → SAAP",
+        "date": "03 de jul de 2026",
+        "remark": "PBN/B2C2D2L1O2S1S2 DOF/260704 REG/TC117 OPR/FAG PER/B RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/HURON 1-4 FFLTEND VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "CONDOR",
+        "aircraft": "TC12",
+        "route": "SAOR → SAME",
+        "date": "25 de jun de 2026",
+        "remark": "DOF/260626 REG/TC112 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "FAG212",
+        "aircraft": "B737",
+        "route": "SAZT → SADP",
+        "date": "25 de jun de 2026",
+        "remark": "PBN/A1B1C1D1S1S2 DOF/260625 REG/T99 SEL/ERAP OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "CONDOR2",
         "aircraft": "F16",
@@ -186,9 +277,23 @@
       {
         "callsign": "HALCON1",
         "aircraft": "A4",
+        "route": "SAOR → SACE",
+        "date": "01 de may de 2026",
+        "remark": "DOF/260502 RMK/OPR/ARGENTINA AIR FORCE STS/MARSA STAYINFO/DESFILE FFLT/HALCON1-2 FFLTEND RMK/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HALCON1",
+        "aircraft": "A4",
         "route": "SAOR → SAOC",
         "date": "05 de dic de 2025",
         "remark": "DOF/251206 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA WITH CONDR11, CONDR12, CONDR13, CONDR14, CONDR15, OME81 AND BRUJO01 FFLT/HALCON1-2 VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "MIRAGE5",
+        "aircraft": "MIRA",
+        "route": "SAVC → SAZT",
+        "date": "20 de nov de 2025",
+        "remark": "DOF/251121 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/MIRAGE1-X FFLTEND RMK/ULTIMO VUELO MIRAGE FAAV VSOA/FAAV.COM.AR /V/"
       },
       {
         "callsign": "FIERRO4",
@@ -240,6 +345,20 @@
         "route": "YPDN → YPDN",
         "date": "24 de jul de 2026",
         "remark": "DOF/260724 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/MARSA FFLT/TIGER1-5 FFLTEND RMK/OPERATION PITCH BLACK VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HURON3",
+        "aircraft": "BE20",
+        "route": "SAAP → SAAP",
+        "date": "03 de jul de 2026",
+        "remark": "PBN/B2C2D2L1O2S1S2 DOF/260704 REG/TC-117 OPR/FAG PER/B RMK/RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/HURON 1-4 FFLTEND VSOA/FAAV.COM.AR /V/ /V/"
+      },
+      {
+        "callsign": "FAG236",
+        "aircraft": "F28",
+        "route": "SACO → SAOC",
+        "date": "02 de jul de 2026",
+        "remark": "PBN/B3B4B5D3D4 DOF/260702 REG/T51 OPR/FAG PER/B RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
       },
       {
         "callsign": "DAGA",
@@ -367,7 +486,28 @@
         "remark": "DOF/260627 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
       },
       {
+        "callsign": "ZORRO2",
+        "aircraft": "A4AR",
+        "route": "SAOR → SAOR",
+        "date": "23 de jun de 2026",
+        "remark": "DOF/260624 OPR/FAA RMK//EET/SAEF 0015 EET/SAMC0120/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "HALCON2",
+        "aircraft": "A4",
+        "route": "SAAP → SAOR",
+        "date": "20 de jun de 2026",
+        "remark": "DOF/260621 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE OPR/ARGENTINA AIR FORCE  STAYINFO/REGRESO DESFILE VSOA/FAAV.COM.AR VSOA/FAAV.COM.AR EET/SACF0010 EET/SAMF0030 /V/"
+      },
+      {
         "callsign": "DELTA",
+        "aircraft": "A4",
+        "route": "SAAP → SAAP",
+        "date": "20 de jun de 2026",
+        "remark": "DOF/260620 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE OPR/ARGENTINA AIR FORCE  STAYINFO/DESFILE DIA DE LA BANDERA VSOA/FAAV.COM.AR VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "FAG250",
         "aircraft": "A4",
         "route": "SAAP → SAAP",
         "date": "20 de jun de 2026",

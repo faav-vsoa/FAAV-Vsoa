@@ -102,7 +102,7 @@ function computeStats(historyResult, fpsRaw) {
     if (!fp) {
       let best = null, bestT = 0;
       for (const f of fps) {
-        if (!f.connection_id || !f.filed) continue;
+        if (!f.filed) continue;
         const t = new Date(f.filed).getTime();
         if (t > bestT && t <= new Date(s.end).getTime() + 3600000 && t >= new Date(s.start).getTime() - 3600000) {
           best = f; bestT = t;

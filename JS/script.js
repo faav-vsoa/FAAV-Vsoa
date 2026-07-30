@@ -1,12 +1,39 @@
-  const burger = document.getElementById('burger');
-  const navlinks = document.getElementById('navlinks');
-  burger.addEventListener('click', () => navlinks.classList.toggle('open'));
-  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
+const burger = document.getElementById('burger');
+const navlinks = document.getElementById('navlinks');
+const mobileOverlay = document.getElementById('mobileMenuOverlay');
 
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
-  }, {threshold:0.15});
-  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+function toggleMenu() {
+  const isOpen = navlinks.classList.toggle('open');
+  burger.classList.toggle('active', isOpen);
+  burger.setAttribute('aria-expanded', isOpen);
+  if (mobileOverlay) mobileOverlay.classList.toggle('active', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+burger.addEventListener('click', toggleMenu);
+
+if (mobileOverlay) {
+  mobileOverlay.addEventListener('click', () => {
+    navlinks.classList.remove('open');
+    burger.classList.remove('active');
+    burger.setAttribute('aria-expanded', 'false');
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+}
+
+navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navlinks.classList.remove('open');
+  burger.classList.remove('active');
+  burger.setAttribute('aria-expanded', 'false');
+  if (mobileOverlay) mobileOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}));
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+}, {threshold:0.15});
+document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
 
   /* ══════════════════════════════════════════════════════════════════
      PUBLICACIONES DE INSTAGRAM — poné las imágenes en img/posts/

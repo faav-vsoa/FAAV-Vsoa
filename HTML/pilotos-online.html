@@ -196,15 +196,16 @@
     var fp = lv ? lv.flight_plan : null;
     var route = fp ? (fp.departure || '????') + ' → ' + (fp.arrival || '????') : 'Sin plan de vuelo';
     var aircraft = fp && fp.aircraft_short ? fp.aircraft_short : '—';
-    var card = document.createElement('div');
-    card.className = 'pilot-card lockframe pilot-online';
-    card.innerHTML = '' +
-     '<div class="pilot-top"><div>' +
-     '<div class="pilot-name">' + p.name + (p.callsign ? ' <span style="color:#ff9d00;font-weight:bold;font-size:0.85em;">[' + p.callsign + ']</span>' : '') + '</div>' +
-     '<div class="pilot-cid"><a href="https://stats.vatsim.net/stats/' + p.cid + '" target="_blank" rel="noopener" style="color:var(--blue-light);text-decoration:none;border-bottom:1px dotted rgba(0,210,255,0.3);">CID ' + p.cid + '</a></div>' +
-     (p.indicativo || p.brigade ? '<div style="font-size:0.75em;opacity:0.75;margin-top:2px;">' + (p.indicativo ? '"'+p.indicativo+'"' : '') + (p.indicativo && p.brigade ? ' · ' : '') + (p.brigade || '') + '</div>' : '') +
-     '</div><span class="pilot-status online"><span class="dot"></span>En vuelo</span></div>' +
-     '<div class="pilot-detail"><b>' + lv.callsign + '</b><span>' + aircraft + '</span><span class="pd-route">' + route + '</span><span>FL' + Math.round((lv.altitude||0)/100) + '</span><span>' + (lv.groundspeed||0) + ' kt</span></div>' +
+     var acIcon = '../icons/aircraft/' + (aircraft || '').toLowerCase() + '.svg';
+     var card = document.createElement('div');
+     card.className = 'pilot-card lockframe pilot-online';
+     card.innerHTML = '' +
+      '<div class="pilot-top"><div>' +
+      '<div class="pilot-name">' + p.name + (p.callsign ? ' <span style="color:#ff9d00;font-weight:bold;font-size:0.85em;">[' + p.callsign + ']</span>' : '') + '</div>' +
+      '<div class="pilot-cid"><a href="https://stats.vatsim.net/stats/' + p.cid + '" target="_blank" rel="noopener" style="color:var(--blue-light);text-decoration:none;border-bottom:1px dotted rgba(0,210,255,0.3);">CID ' + p.cid + '</a></div>' +
+      (p.indicativo || p.brigade ? '<div style="font-size:0.75em;opacity:0.75;margin-top:2px;">' + (p.indicativo ? '"'+p.indicativo+'"' : '') + (p.indicativo && p.brigade ? ' · ' : '') + (p.brigade || '') + '</div>' : '') +
+      '</div><span class="pilot-status online"><span class="dot"></span>En vuelo</span></div>' +
+      '<div class="pilot-detail"><b>' + lv.callsign + '</b><span class="ac-cell">' + aircraft + '<img src="' + acIcon + '" class="ac-icon" onerror="this.style.display=\'none\'"></span><span class="pd-route">' + route + '</span><span>FL' + Math.round((lv.altitude||0)/100) + '</span><span>' + (lv.groundspeed||0) + ' kt</span></div>' +
      '<a href="https://stats.vatsim.net/stats/' + p.cid + '" target="_blank" rel="noopener" class="op-link">Ver historial <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>';
     grid.appendChild(card);
    });

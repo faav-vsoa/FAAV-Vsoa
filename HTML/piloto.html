@@ -321,10 +321,11 @@
         var speed = (live.groundspeed || 0) + ' kt';
         var squawk = live.transponder || '----';
 
+        var acIconPath = '../icons/aircraft/' + (aircraft || '').toLowerCase() + '.svg';
         detailsEl.innerHTML =
           '<div class="vm-popup-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:16px;background:var(--card-bg);border:1px solid var(--line);border-radius:2px;">' +
           '<div class="vm-popup-cell"><span>Callsign VATSIM</span><b>' + (live.callsign || '—') + '</b></div>' +
-          '<div class="vm-popup-cell"><span>Aeronave</span><b>' + aircraft + '</b></div>' +
+          '<div class="vm-popup-cell"><span>Aeronave</span><b><span class="ac-cell">' + aircraft + '<img src="' + acIconPath + '" class="ac-icon" onerror="this.style.display=\'none\'"></span></b></div>' +
           '<div class="vm-popup-cell"><span>Ruta</span><b>' + route + '</b></div>' +
           '<div class="vm-popup-cell"><span>Altitud</span><b>' + altitude + '</b></div>' +
           '<div class="vm-popup-cell"><span>Velocidad</span><b>' + speed + '</b></div>' +

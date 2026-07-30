@@ -206,7 +206,7 @@
     var flightInfo = '';
     if(isOnline && lv.flight_plan){
      var fp = lv.flight_plan;
-     var route = (fp.departure || '????') + ' ? ' + (fp.arrival || '????');
+     var route = (fp.departure || '????') + ' → ' + (fp.arrival || '????');
      flightInfo = '<span style="color:var(--blue-light);font-size:11px;margin-left:8px;">✈ ' + route + '</span>';
     }
 

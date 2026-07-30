@@ -233,7 +233,7 @@ const SPECIFIC_ICON = {
   C172: 'ga', C152: 'ga', C182: 'ga', PA28: 'ga', PA34: 'ga', SR22: 'ga', DA40: 'ga',
   T6: 'ga', BE36: 'ga', BE20: 'ga', BE58: 'ga', TEX2: 'ga',
   MIRA: 'fighter', IA58: 'fighter', IA63: 'fighter', TUCA: 'fighter',
-  TC12: 'milTransport'
+  TC12: 'ga'
 };
 
 let svgCache = {};

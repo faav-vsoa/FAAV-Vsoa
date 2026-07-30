@@ -86,11 +86,12 @@ function computeStats(historyResult, fpsRaw) {
 
   const fpByConn = {};
   for (const fp of fps) {
-    if (!fp.connection_id) continue;
+    if (fp.connection_id === undefined || fp.connection_id === null) continue;
+    const cid = fp.connection_id;
     const t = new Date(fp.filed).getTime();
-    if (!fpByConn[fp.connection_id] || t > fpByConn[fp.connection_id]._time) {
-      fpByConn[fp.connection_id] = fp;
-      fpByConn[fp.connection_id]._time = t;
+    if (!fpByConn[cid] || t > fpByConn[cid]._time) {
+      fpByConn[cid] = fp;
+      fpByConn[cid]._time = t;
     }
   }
 

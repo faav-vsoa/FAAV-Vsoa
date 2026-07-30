@@ -74,10 +74,10 @@ function computeStats(historyResult, fpsRaw) {
   const airportCount = {}, aircraftCount = {};
   const seenConn = {};
   for (const fp of fps) {
-    if (!fp.connection_id) continue;
+    if (fp.connection_id === undefined || fp.connection_id === null) continue;
     const cid = fp.connection_id;
-    if (seenConn[cid] && seenConn[cid] > new Date(fp.filed).getTime()) continue;
-    seenConn[cid] = new Date(fp.filed).getTime();
+    if (cid && seenConn[cid] && seenConn[cid] > new Date(fp.filed).getTime()) continue;
+    if (cid) seenConn[cid] = new Date(fp.filed).getTime();
     if (fp.dep) airportCount[fp.dep] = (airportCount[fp.dep] || 0) + 1;
     if (fp.arr) airportCount[fp.arr] = (airportCount[fp.arr] || 0) + 1;
     const ac = (fp.aircraft || '').split('/')[0] || fp.aircraft;

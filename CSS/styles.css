@@ -102,8 +102,6 @@ nav{
   .brand-text{display:flex; flex-direction:column; align-items:center; text-align:center; line-height:1.2; min-width:0; flex-shrink:0;}
   .brand-text b{font-size:15px; letter-spacing:0.03em;}
   .brand-text span{font-size:9.5px; max-width:none; white-space:normal; overflow:visible; text-overflow:clip;}
-  .navcta #navLogin{display:none;}
-  .navcta .btn-ghost{display:none;}
   .burger{display:flex; z-index:60;}
 }
 
@@ -402,8 +400,6 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .brand-text{display:flex; flex-direction:column; align-items:center; text-align:center; line-height:1.2; flex-shrink:0;}
   .brand-text b{font-size:15px; letter-spacing:0.03em;}
   .brand-text span{font-size:9.5px; max-width:none; white-space:normal; overflow:visible; text-overflow:clip;}
-  .navcta #navLogin{display:none;}
-  .navcta .btn-ghost{display:none;}
   .burger{display:flex; z-index:60;}
 
   header{position:fixed; z-index:50;}
@@ -433,19 +429,8 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .navlinks a:hover, .navlinks a:focus-visible{color:var(--blue-light);}
   .navlinks a::after{display:none;}
   
-  .navlinks .mobile-login-btn{
-    display:inline-flex; align-items:center; gap:8px; margin-top:4px; margin-bottom:4px; padding:12px 0;
-    font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.1em;
-    text-transform:uppercase; color:var(--ivory); border:1px solid var(--line-strong);
-    border-radius:2px; width:100%; justify-content:center;
-    transition:background .25s ease, border-color .25s ease;
-  }
-  .navlinks .mobile-login-btn:hover{background:rgba(127,184,242,0.06); border-color:var(--blue-light);}
-  .navlinks .mobile-login-btn svg{width:14px; height:14px;}
   
   .burger{display:flex; z-index:60;}
-  .navcta .btn-ghost{display:none;}
-  .navcta #navLogin{display:none;}
 }
 
 /* Burger animation — display is controlled by media queries above */

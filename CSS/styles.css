@@ -433,6 +433,38 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .navcta #navLogin{display:none;}
 }
 
+/* ---------- mobile bottom nav ---------- */
+.mobile-bottom-nav{
+  display:none;
+}
+@media (max-width:1200px){
+  .mobile-bottom-nav{
+    display:flex; position:fixed; bottom:0; left:0; right:0; z-index:45;
+    background:rgba(5,11,23,0.92); backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);
+    overflow-x:auto; overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:0 4px;
+  }
+  .mobile-bottom-nav::-webkit-scrollbar{display:none;}
+  .mobile-bottom-nav a{
+    flex:0 0 auto; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:2px; padding:6px 10px; min-width:64px;
+    color:var(--muted); text-decoration:none;
+    font-family:'JetBrains Mono',monospace; font-size:8.5px; letter-spacing:0.04em; text-transform:uppercase;
+    transition:color .2s ease;
+  }
+  .mobile-bottom-nav a svg{width:18px; height:18px; flex-shrink:0;}
+  .mobile-bottom-nav a:hover, .mobile-bottom-nav a:focus-visible, .mobile-bottom-nav a:active{color:var(--blue-light);}
+  .mobile-bottom-nav a:active{opacity:0.7;}
+  body{padding-bottom:56px;}
+}
+@media (max-width:420px){
+  .mobile-bottom-nav a{min-width:56px; padding:6px 6px; font-size:7.5px;}
+  .mobile-bottom-nav a svg{width:16px; height:16px;}
+}
+
 /* Burger animation */
 .burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px; z-index:60;}
 .burger span{width:22px; height:2px; background:var(--ivory); transition:transform .3s ease, opacity .2s ease; transform-origin:center;}

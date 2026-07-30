@@ -395,43 +395,46 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
 .mobile-menu-overlay.active{opacity:1; visibility:visible;}
 
 @media (max-width:1200px){
+  .header-links-row{justify-content:space-between; gap:16px;}
+  .brand-text{display:none;}
+  .navcta #navLogin{display:none;}
+  .navcta .btn-ghost{display:none;}
+  .burger{display:flex; z-index:60;}
+  
   .navlinks{
-    position:fixed !important; top:0 !important; right:0 !important; bottom:0 !important;
-    width:100vw !important; max-width:100vw !important; min-width:100vw !important;
-    background:var(--bg) !important; border-left:1px solid var(--line) !important;
-    flex-direction:column !important; align-items:stretch !important;
-    padding:80px 24px 40px !important; gap:0 !important;
-    transform:translateX(100%) !important; transition:transform .35s cubic-bezier(.25,.46,.45,.94) !important;
-    z-index:50 !important; overflow-y:auto !important;
-    box-shadow:-4px 0 32px rgba(0,0,0,0.4) !important;
-    left:auto !important; width:100vw !important; max-width:none !important;
+    position:fixed; top:0; right:0; bottom:0; width:100%; max-width:100vw;
+    background:var(--bg); border-left:1px solid var(--line);
+    flex-direction:column; align-items:stretch; padding:80px 24px 40px; gap:0;
+    transform:translateX(100%); transition:transform .35s cubic-bezier(.25,.46,.45,.94);
+    z-index:50; overflow-y:auto;
+    box-shadow:-4px 0 32px rgba(0,0,0,0.4);
   }
-  .navlinks.open{transform:translateX(0) !important;}
+  .navlinks.open{transform:translateX(0);}
   .navlinks a{
-    font-size:15px !important; padding:16px 0 !important; width:100% !important;
-    border-bottom:1px solid var(--line-weak) !important;
-    display:flex !important; align-items:center !important; gap:12px !important; justify-content:flex-start !important;
+    font-size:15px; padding:16px 0; width:100%;
+    border-bottom:1px solid var(--line-weak);
+    display:flex; align-items:center; gap:12px; justify-content:flex-start;
   }
-  .navlinks a:hover, .navlinks a:focus-visible{color:var(--blue-light) !important; background:rgba(127,184,242,0.06) !important;}
-  .navlinks a::after{display:none !important;}
+  .navlinks a:hover, .navlinks a:focus-visible{color:var(--blue-light); background:rgba(127,184,242,0.06);}
+  .navlinks a::after{display:none;}
   
-  /* Login button inside mobile menu */
   .navlinks .mobile-login-btn{
-    display:inline-flex !important; align-items:center !important; gap:8px !important; margin-top:8px !important; padding:16px 0 !important;
-    font-family:'JetBrains Mono',monospace !important; font-size:13px !important; letter-spacing:0.1em !important;
-    text-transform:uppercase !important; color:var(--ivory) !important; border:1px solid var(--line-strong) !important;
-    border-radius:2px !important; width:100% !important; justify-content:center !important;
-    transition:background .25s ease, border-color .25s ease !important;
+    display:inline-flex; align-items:center; gap:8px; margin-top:8px; padding:16px 0;
+    font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ivory); border:1px solid var(--line-strong);
+    border-radius:2px; width:100%; justify-content:center;
+    transition:background .25s ease, border-color .25s ease;
   }
-  .navlinks .mobile-login-btn:hover{background:rgba(127,184,242,0.06) !important; border-color:var(--blue-light) !important;}
-  .navlinks .mobile-login-btn svg{width:14px !important; height:14px !important;}
+  .navlinks .mobile-login-btn:hover{background:rgba(127,184,242,0.06); border-color:var(--blue-light);}
+  .navlinks .mobile-login-btn svg{width:14px; height:14px;}
   
-  .burger{display:flex !important; z-index:60 !important;}
-  .navcta .btn-ghost{display:none !important;}
-  .navcta #navLogin{display:none !important;}
+  .burger{display:flex; z-index:60;}
+  .navcta .btn-ghost{display:none;}
+  .navcta #navLogin{display:none;}
 }
 
 /* Burger animation */
+.burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px; z-index:60;}
 .burger span{width:22px; height:2px; background:var(--ivory); transition:transform .3s ease, opacity .2s ease; transform-origin:center;}
 .burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .burger.active span:nth-child(2){opacity:0;}

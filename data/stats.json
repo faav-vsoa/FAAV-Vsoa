@@ -4,7 +4,7 @@
     "last": "WOLF34 · 16 de may de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">ZZZZ</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">ESPA</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SACO",
-    "aircraft": "C172",
+    "aircraft": "F16",
     "lastFlights": [
       {
         "callsign": "WOLF34",
@@ -48,7 +48,7 @@
     "hours": "102h 35m",
     "last": "TIGER3 · 24 de jul de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
-    "airport": "LPPR",
+    "airport": "LERS",
     "aircraft": "C25B",
     "lastFlights": [
       {
@@ -152,7 +152,7 @@
     "hours": "449h 31m",
     "last": "FAG212 · 29 de jul de 2026",
     "lastDetail": "",
-    "airport": "SAOC",
+    "airport": "SAAP",
     "aircraft": "F16",
     "lastFlights": [
       {

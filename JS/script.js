@@ -231,7 +231,9 @@ const SPECIFIC_ICON = {
   H60: 'heli', UH60: 'heli', S70: 'heli', S76: 'heli', B412: 'heli', B212: 'heli',
   CH47: 'heli', A109: 'heli', H125: 'heli', H145: 'heli', R44: 'heli', R22: 'heli',
   C172: 'ga', C152: 'ga', C182: 'ga', PA28: 'ga', PA34: 'ga', SR22: 'ga', DA40: 'ga',
-  T6: 'ga', BE36: 'ga'
+  T6: 'ga', BE36: 'ga', BE20: 'ga', BE58: 'ga', TEX2: 'ga',
+  MIRA: 'fighter', IA58: 'fighter', IA63: 'fighter', TUCA: 'fighter',
+  TC12: 'milTransport'
 };
 
 let svgCache = {};
@@ -322,7 +324,7 @@ function updateMap(livePilots) {
           <span>${p.name} · ${p.indicativo || ''}</span>
         </div>
         <div class="vm-popup-grid">
-          <div class="vm-popup-cell"><span>Aeronave</span><b>${aircraft}</b></div>
+          <div class="vm-popup-cell"><span>Aeronave</span><b><span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg" class="ac-icon" onerror="this.style.display=\'none\'"></span></b></div>
           <div class="vm-popup-cell"><span>Squawk</span><b>${squawk}</b></div>
           <div class="vm-popup-cell"><span>Ruta</span><b>${route}</b></div>
           <div class="vm-popup-cell"><span>Altitud</span><b>${onGround ? 'Suelo' : Math.round(live.altitude || 0).toLocaleString('es-AR') + ' ft'}</b></div>
@@ -397,7 +399,7 @@ function updateMap(livePilots) {
             </div>
             <span class="pilot-status online"><span class="dot"></span>En vuelo</span>
           </div>
-          <div class="pilot-flight"><b>${live.callsign}</b> · ${aircraft}<br>${route}<br>FL${Math.round((live.altitude||0)/100)} · ${live.groundspeed||0} kt</div>
+          <div class="pilot-flight"><b>${live.callsign}</b> · <span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg" class="ac-icon" onerror="this.style.display=\'none\'"></span><br>${route}<br>FL${Math.round((live.altitude||0)/100)} · ${live.groundspeed||0} kt</div>
           <a href="https://stats.vatsim.net/stats/${p.cid}" target="_blank" rel="noopener" class="op-link">Ver historial <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>`;
       } else {
         card.innerHTML = `${corners}

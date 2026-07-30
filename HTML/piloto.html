@@ -209,7 +209,7 @@
   var cidLink = document.getElementById('p-cid-link');
   if(cidLink && pilot.cid){
     cidLink.textContent = 'CID ' + pilot.cid;
-    cidLink.href = 'https://vatsim.net/members/' + pilot.cid;
+    cidLink.href = 'https://stats.vatsim.net/stats/' + pilot.cid;
   }
 
   function pad2(n){ return n < 10 ? '0' + n : n; }

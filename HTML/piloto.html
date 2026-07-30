@@ -98,7 +98,7 @@
       <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Avión + usado</div>
       <div style="display:flex;justify-content:center;align-items:center;gap:6px;">
        <b id="stat-aircraft" style="color:var(--gold);font-size:18px;font-family:'Oswald',sans-serif;">—</b>
-       <span id="stat-ac-icon" style="display:inline-flex;align-items:center;height:22px;"></span>
+        <img id="stat-ac-icon" style="height:22px;width:auto;display:none;" onerror="this.style.display='none'">
       </div>
      </div>
     </div>
@@ -255,16 +255,10 @@
     if(data.aircraft !== '—'){
       var acCode = data.aircraft.toLowerCase();
       var iconPath = '../icons/aircraft/' + acCode + '.svg';
-      var iconContainer = document.getElementById('stat-ac-icon');
-      if(iconContainer){
-        fetch(iconPath).then(function(r){
-          if(!r.ok) throw Error();
-          return r.text();
-        }).then(function(svg){
-          iconContainer.innerHTML = svg.replace(/^<svg([^>]*)>/, '<svg$1 fill="currentColor" style="width:auto;height:22px;color:var(--gold);display:block;">');
-        }).catch(function(){
-          iconContainer.innerHTML = '';
-        });
+      var iconEl = document.getElementById('stat-ac-icon');
+      if(iconEl){
+        iconEl.src = iconPath;
+        iconEl.style.display = 'inline-block';
       }
     }
 

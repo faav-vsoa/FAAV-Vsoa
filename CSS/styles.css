@@ -93,8 +93,6 @@ nav{
 .btn-ghost{border:1px solid var(--line-strong); color:var(--ivory);}
 .btn-ghost:hover{border-color:var(--blue-light); background:rgba(127,184,242,0.06);}
 .navcta{display:flex; align-items:center; gap:14px;}
-.burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px;}
-.burger span{width:22px; height:2px; background:var(--ivory);}
 
 @media (max-width:1200px){
   .header-links-row{justify-content:space-between; gap:16px;}
@@ -432,11 +430,10 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .navlinks .mobile-nav-btn:hover{background:rgba(127,184,242,0.06); border-color:var(--blue-light);}
   
   .desktop-only{display:none;}
-  .burger{display:flex; z-index:60;}
 }
 
-/* Burger animation — display is controlled by media queries above */
-.burger{flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px; z-index:60;}
+/* Burger — hidden on desktop, flex on mobile via media query */
+.burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px; z-index:60;}
 .burger span{width:22px; height:2px; background:var(--ivory); transition:transform .3s ease, opacity .2s ease; transform-origin:center;}
 .burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .burger.active span:nth-child(2){opacity:0;}
@@ -475,11 +472,6 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .yt-extra{grid-template-columns:1fr;}
   .pilot-grid{grid-template-columns:1fr;}
 }
-
-
-
-
-
 
 /* ---------- marcadores del rastreador VATSIM (estilo radar) ---------- */
 .vatsim-marker{ position:relative; overflow:visible; }

@@ -113,7 +113,7 @@ function computeStats(historyResult, fpsRaw) {
     const ac = fp ? ((fp.aircraft || '').split('/')[0] || fp.aircraft) : '—';
     const route = fp ? ((fp.dep || '??') + ' → ' + (fp.arr || '??')) : '—';
     const d = new Date(s.start);
-    const remark = fp && fp.remarks ? fp.remarks : '';
+    const remark = fp && fp.rmks ? fp.rmks : '';
     lastFlights.push({
       callsign: s.callsign || '—',
       aircraft: ac,
@@ -178,15 +178,14 @@ async function fetchPilot(cid) {
 }
 
 async function main() {
-  var pending = PILOTS.filter(function(p){ return p.cid && !statsData[p.cid]; });
-  console.log('Already have: ' + Object.keys(statsData).length + ' pilots');
-  console.log('Pending: ' + pending.length + ' pilots\n');
-  if(pending.length > 0){
-    console.log('Waiting 45s for rate limit...');
-    await new Promise(function(r){ setTimeout(r, 45000); });
-  }
+  // Always refresh ALL pilots (not just pending)
+  var toFetch = PILOTS.filter(function(p){ return p.cid; });
+  console.log('Total pilots: ' + toFetch.length);
+  console.log('Refreshing all pilots...\n');
+  console.log('Waiting 45s for rate limit...');
+  await new Promise(function(r){ setTimeout(r, 45000); });
   var ok = 0, fail = 0;
-  for (const p of pending) {
+  for (const p of toFetch) {
     process.stdout.write('  ' + p.callsign + ' (CID ' + p.cid + ')... ');
     try {
       const stats = await fetchPilot(p.cid);

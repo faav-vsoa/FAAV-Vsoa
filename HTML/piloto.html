@@ -259,6 +259,7 @@
       var iconEl = document.getElementById('stat-ac-icon');
       if(iconEl){
         iconEl.src = iconPath;
+        iconEl.style.height = (22 * acScale(acCode)) + 'px';
         iconEl.style.display = 'inline-block';
       }
     }
@@ -271,7 +272,7 @@
         var acIcon = '../icons/aircraft/' + (f.aircraft || '').toLowerCase() + '.svg?v=3';
         return '<div style="display:grid;grid-template-columns:1.2fr 1fr 1.5fr 1fr 1.5fr;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;color:var(--ivory);align-items:center;">' +
           '<span style="color:var(--gold);font-weight:500;">' + f.callsign + '</span>' +
-          '<span class="ac-cell">' + f.aircraft + '<img src="' + acIcon + '" class="ac-icon" onerror="this.style.display=\'none\'"></span>' +
+          '<span class="ac-cell">' + f.aircraft + '<img src="' + acIcon + '" class="ac-icon" style="' + acIconStyle(f.aircraft, 14) + '" onerror="this.style.display=\'none\'"></span>' +
           '<span style="color:var(--blue-light);">' + f.route + '</span>' +
           '<span style="color:var(--muted);">' + f.date + '</span>' +
           '<span style="color:var(--gold);font-size:11px;font-family:\'JetBrains Mono\',monospace;">' + (f.remark || '—') + '</span>' +
@@ -326,7 +327,7 @@
         detailsEl.innerHTML =
           '<div class="vm-popup-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:16px;background:var(--card-bg);border:1px solid var(--line);border-radius:2px;">' +
           '<div class="vm-popup-cell"><span>Callsign VATSIM</span><b>' + (live.callsign || '—') + '</b></div>' +
-          '<div class="vm-popup-cell"><span>Aeronave</span><b><span class="ac-cell">' + aircraft + '<img src="' + acIconPath + '" class="ac-icon" onerror="this.style.display=\'none\'"></span></b></div>' +
+          '<div class="vm-popup-cell"><span>Aeronave</span><b><span class="ac-cell">' + aircraft + '<img src="' + acIconPath + '" class="ac-icon" style="' + acIconStyle(aircraft, 14) + '" onerror="this.style.display=\'none\'"></span></b></div>' +
           '<div class="vm-popup-cell"><span>Ruta</span><b>' + route + '</b></div>' +
           '<div class="vm-popup-cell"><span>Altitud</span><b>' + altitude + '</b></div>' +
           '<div class="vm-popup-cell"><span>Velocidad</span><b>' + speed + '</b></div>' +

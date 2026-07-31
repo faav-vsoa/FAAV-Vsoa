@@ -236,6 +236,30 @@ const SPECIFIC_ICON = {
   TC12: 'ga'
 };
 
+/* ─── ESCALAS RELATIVAS DE AERONAVES (referencia: IA-58 Pucará) ───
+   El ancho de cada icono top-view es proporcional a la envergadura real.
+   Un C-130 se ve ~2.8× más grande que un Pucará; un F-16 ~0.65×. */
+var AC_REF_SPAN = 14.45; // envergadura IA-58 Pucará (m)
+var AC_WINGSPAN = {
+  IA58: 14.45,
+  C130: 40.41, L100: 40.41, KC130: 40.41, C295: 25.81, C17: 51.75, C5: 67.88, A400: 42.40,
+  F16: 9.45, A4: 8.38, A4AR: 8.38, F18: 13.62, F15: 13.05, F14: 19.55,
+  MIRA: 8.22, IA63: 9.69, TUCA: 11.14, TEX2: 10.19, T6: 10.19,
+  BE20: 16.61, BE58: 11.53, TC12: 17.65,
+  C152: 10.17, C172: 11.00, C182: 10.97,
+  B737: 34.32, B738: 35.79, B752: 38.05, B789: 60.12,
+  A20N: 35.80, F28: 25.07, LJ35: 12.04, C25B: 16.26,
+  H60: 16.36, UH60: 16.36, S70: 16.36, CH47: 18.29, B412: 14.01,
+  R44: 10.06, PA28: 10.92, SR22: 11.68, DA40: 11.94
+};
+window.acScale = function(code){
+  var s = AC_WINGSPAN[String(code || '').toUpperCase()];
+  return s ? s / AC_REF_SPAN : 1;
+};
+window.acIconStyle = function(code, base){
+  return 'height:' + Math.round(base * acScale(code)) + 'px;width:auto;';
+};
+
 let svgCache = {};
 
 function getFallbackIcon(icaoType){
@@ -293,7 +317,7 @@ function updateMap(livePilots) {
     const rotatedIcon = L.divIcon({
       className: 'vatsim-marker',
       html: `
-        <div class="vm-plane ${onGround ? 'vm-ground' : ''}" style="transform:rotate(${heading}deg);"><svg viewBox="0 0 24 24" width="28" height="28">${fallbackSvg}</svg></div>
+        <div class="vm-plane ${onGround ? 'vm-ground' : ''}" style="transform:rotate(${heading}deg) scale(${acScale(icaoType)});"><svg viewBox="0 0 24 24" width="28" height="28">${fallbackSvg}</svg></div>
         <div class="vm-label">
           <span class="vm-callsign">${live.callsign}</span>
         </div>`,
@@ -324,7 +348,7 @@ function updateMap(livePilots) {
           <span>${p.name} · ${p.indicativo || ''}</span>
         </div>
         <div class="vm-popup-grid">
-          <div class="vm-popup-cell"><span>Aeronave</span><b><span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg" class="ac-icon" onerror="this.style.display=\'none\'"></span></b></div>
+          <div class="vm-popup-cell"><span>Aeronave</span><b><span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg?v=3" class="ac-icon" style="${acIconStyle(aircraft, 14)}" onerror="this.style.display=\'none\'"></span></b></div>
           <div class="vm-popup-cell"><span>Squawk</span><b>${squawk}</b></div>
           <div class="vm-popup-cell"><span>Ruta</span><b>${route}</b></div>
           <div class="vm-popup-cell"><span>Altitud</span><b>${onGround ? 'Suelo' : Math.round(live.altitude || 0).toLocaleString('es-AR') + ' ft'}</b></div>
@@ -399,7 +423,7 @@ function updateMap(livePilots) {
             </div>
             <span class="pilot-status online"><span class="dot"></span>En vuelo</span>
           </div>
-          <div class="pilot-flight"><b>${live.callsign}</b> · <span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg" class="ac-icon" onerror="this.style.display=\'none\'"></span><br>${route}<br>FL${Math.round((live.altitude||0)/100)} · ${live.groundspeed||0} kt</div>
+          <div class="pilot-flight"><b>${live.callsign}</b> · <span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg?v=3" class="ac-icon" style="${acIconStyle(aircraft, 14)}" onerror="this.style.display=\'none\'"></span><br>${route}<br>FL${Math.round((live.altitude||0)/100)} · ${live.groundspeed||0} kt</div>
           <a href="https://stats.vatsim.net/stats/${p.cid}" target="_blank" rel="noopener" class="op-link">Ver historial <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>`;
       } else {
         card.innerHTML = `${corners}

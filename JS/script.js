@@ -237,10 +237,9 @@ const SPECIFIC_ICON = {
 };
 
 /* ─── ESCALAS RELATIVAS DE AERONAVES (referencia: IA-58 Pucará) ───
-   El ancho de cada icono top-view es proporcional a la envergadura real,
-   con compresión ^0.6 (para que los cazas chicos no queden microscópicos)
-   y un piso del 90%. Un C-130 se ve ~1.85× más grande que un Pucará;
-   un F-16 ~0.9×. */
+   Tarjetas/stats/popups: altura proporcional a envergadura real con
+   compresión ^0.6 y piso 0.9. El MAPA usa la fórmula de VATSIM Radar:
+   ancho = clamp(envergadura/2, 12, 35) px. */
 var AC_REF_SPAN = 14.45; // envergadura IA-58 Pucará (m)
 var AC_WINGSPAN = {
   IA58: 14.45,
@@ -261,6 +260,13 @@ window.acScale = function(code){
 };
 window.acIconStyle = function(code, base){
   return 'height:' + Math.round(base * acScale(code)) + 'px;width:auto;';
+};
+/* Tamaño de icono en el MAPA, idéntico al de VATSIM Radar:
+   ancho = clamp(envergadura/2, 12, 35) px (referencia: radar vatsim, coef*30 clamp 12-35). */
+window.mapAcWidth = function(code){
+  var s = AC_WINGSPAN[String(code || '').toUpperCase()];
+  if(!s) return 24;
+  return Math.round(Math.min(35, Math.max(12, s / 2)));
 };
 
 let svgCache = {};
@@ -316,16 +322,17 @@ function updateMap(livePilots) {
     const onGround = (live.groundspeed || 0) < 40 && (live.altitude || 0) < 1000;
     const icaoType = live.flight_plan && live.flight_plan.aircraft_short ? live.flight_plan.aircraft_short : '';
     const fallbackSvg = getFallbackIcon(icaoType);
+    const mapW = mapAcWidth(icaoType);
 
     const rotatedIcon = L.divIcon({
       className: 'vatsim-marker',
       html: `
-        <div class="vm-plane ${onGround ? 'vm-ground' : ''}" style="transform:rotate(${heading}deg) scale(${acScale(icaoType)});"><svg viewBox="0 0 24 24" width="28" height="28">${fallbackSvg}</svg></div>
-        <div class="vm-label">
+        <div class="vm-plane ${onGround ? 'vm-ground' : ''}" style="width:${mapW}px;height:${mapW}px;transform:rotate(${heading}deg);"><svg viewBox="0 0 24 24" width="28" height="28">${fallbackSvg}</svg></div>
+        <div class="vm-label" style="top:${mapW + 6}px;">
           <span class="vm-callsign">${live.callsign}</span>
         </div>`,
       iconSize: [0, 0],
-      iconAnchor: [14, 14]
+      iconAnchor: [mapW / 2, mapW / 2]
     });
 
     const marker = L.marker([live.latitude, live.longitude], { icon: rotatedIcon }).addTo(map);

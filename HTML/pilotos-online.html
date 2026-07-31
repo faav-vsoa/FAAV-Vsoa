@@ -197,7 +197,7 @@
     var fp = lv ? lv.flight_plan : null;
     var route = fp ? (fp.departure || '????') + ' → ' + (fp.arrival || '????') : 'Sin plan de vuelo';
     var aircraft = fp && fp.aircraft_short ? fp.aircraft_short : '—';
-     var acIcon = '../icons/aircraft/' + (aircraft || '').toLowerCase() + '.svg';
+     var acIcon = '../icons/aircraft/' + (aircraft || '').toLowerCase() + '.svg?v=3';
      var card = document.createElement('div');
      card.className = 'pilot-card lockframe pilot-online';
      card.innerHTML = '' +

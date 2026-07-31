@@ -255,7 +255,7 @@
     statAircraft.textContent = data.aircraft;
     if(data.aircraft !== '—'){
       var acCode = data.aircraft.toLowerCase();
-      var iconPath = '../icons/aircraft/' + acCode + '.svg';
+      var iconPath = '../icons/aircraft/' + acCode + '.svg?v=3';
       var iconEl = document.getElementById('stat-ac-icon');
       if(iconEl){
         iconEl.src = iconPath;
@@ -268,7 +268,7 @@
     var toggleEl = document.getElementById('toggle-flights');
     if(data.lastFlights && data.lastFlights.length && flightsEl && container){
       flightsEl.innerHTML = data.lastFlights.map(function(f){
-        var acIcon = '../icons/aircraft/' + (f.aircraft || '').toLowerCase() + '.svg';
+        var acIcon = '../icons/aircraft/' + (f.aircraft || '').toLowerCase() + '.svg?v=3';
         return '<div style="display:grid;grid-template-columns:1.2fr 1fr 1.5fr 1fr 1.5fr;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;color:var(--ivory);align-items:center;">' +
           '<span style="color:var(--gold);font-weight:500;">' + f.callsign + '</span>' +
           '<span class="ac-cell">' + f.aircraft + '<img src="' + acIcon + '" class="ac-icon" onerror="this.style.display=\'none\'"></span>' +
@@ -322,7 +322,7 @@
         var speed = (live.groundspeed || 0) + ' kt';
         var squawk = live.transponder || '----';
 
-        var acIconPath = '../icons/aircraft/' + (aircraft || '').toLowerCase() + '.svg';
+        var acIconPath = '../icons/aircraft/' + (aircraft || '').toLowerCase() + '.svg?v=3';
         detailsEl.innerHTML =
           '<div class="vm-popup-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:16px;background:var(--card-bg);border:1px solid var(--line);border-radius:2px;">' +
           '<div class="vm-popup-cell"><span>Callsign VATSIM</span><b>' + (live.callsign || '—') + '</b></div>' +

@@ -53,7 +53,7 @@
 
 
 @media (max-width:760px){
-  .brigada-grid{grid-template-columns:1fr;}
+  .brigada-grid{grid-template-columns:1fr 1fr; gap:16px;}
   .brigada-header{flex-direction:column; align-items:flex-start; gap:16px;}
   .brigada-num{font-size:48px;}
   .brigada-stats{flex-direction:column; gap:16px;}

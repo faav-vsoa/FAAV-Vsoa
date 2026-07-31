@@ -239,8 +239,8 @@ const SPECIFIC_ICON = {
 /* ─── ESCALAS RELATIVAS DE AERONAVES (referencia: IA-58 Pucará) ───
    El ancho de cada icono top-view es proporcional a la envergadura real,
    con compresión ^0.6 (para que los cazas chicos no queden microscópicos)
-   y un piso del 85%. Un C-130 se ve ~1.85× más grande que un Pucará;
-   un F-16 ~0.85×. */
+   y un piso del 90%. Un C-130 se ve ~1.85× más grande que un Pucará;
+   un F-16 ~0.9×. */
 var AC_REF_SPAN = 14.45; // envergadura IA-58 Pucará (m)
 var AC_WINGSPAN = {
   IA58: 14.45,
@@ -257,7 +257,7 @@ var AC_WINGSPAN = {
 window.acScale = function(code){
   var s = AC_WINGSPAN[String(code || '').toUpperCase()];
   if(!s) return 1;
-  return Math.max(0.85, Math.pow(s / AC_REF_SPAN, 0.6));
+  return Math.max(0.9, Math.pow(s / AC_REF_SPAN, 0.6));
 };
 window.acIconStyle = function(code, base){
   return 'height:' + Math.round(base * acScale(code)) + 'px;width:auto;';
@@ -426,7 +426,7 @@ function updateMap(livePilots) {
             </div>
             <span class="pilot-status online"><span class="dot"></span>En vuelo</span>
           </div>
-          <div class="pilot-flight"><b>${live.callsign}</b> · <span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg?v=3" class="ac-icon" style="${acIconStyle(aircraft, 14)}" onerror="this.style.display=\'none\'"></span><br>${route}<br>FL${Math.round((live.altitude||0)/100)} · ${live.groundspeed||0} kt</div>
+          <div class="pilot-flight"><b>${live.callsign}</b> · <span class="ac-cell">${aircraft}<img src="../icons/aircraft/${aircraft.toLowerCase()}.svg?v=3" class="ac-icon" style="${acIconStyle(aircraft, 18)}" onerror="this.style.display=\'none\'"></span><br>${route}<br>FL${Math.round((live.altitude||0)/100)} · ${live.groundspeed||0} kt</div>
           <a href="https://stats.vatsim.net/stats/${p.cid}" target="_blank" rel="noopener" class="op-link">Ver historial <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>`;
       } else {
         card.innerHTML = `${corners}

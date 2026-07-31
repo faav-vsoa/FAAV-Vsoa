@@ -153,23 +153,39 @@
       </div>
 
       <div style="display:flex; flex-direction:column; gap:6px;">
-       <label for="simulador" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">¿Qué simulador usás?</label>
-       <select id="simulador" name="simulador" style="font-family:'Barlow',sans-serif; font-size:15px; padding:14px 16px; background:var(--bg); border:1px solid var(--line-strong); color:var(--ivory); border-radius:2px; outline:none;" onfocus="this.style.borderColor='var(--blue-light)'" onblur="this.style.borderColor='var(--line-strong)'">
-        <option value="">Seleccioná una opción</option>
-        <option value="Microsoft Flight Simulator 2020">Microsoft Flight Simulator 2020</option>
-        <option value="Microsoft Flight Simulator 2024">Microsoft Flight Simulator 2024</option>
-        <option value="Prepar3D">Prepar3D</option>
-        <option value="X Plane">X Plane</option>
-       </select>
-      </div>
-
-      <div style="display:flex; flex-direction:column; gap:6px;">
        <label for="experiencia" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">¿Tenés experiencia en simulación aérea?</label>
        <select id="experiencia" name="experiencia" style="font-family:'Barlow',sans-serif; font-size:15px; padding:14px 16px; background:var(--bg); border:1px solid var(--line-strong); color:var(--ivory); border-radius:2px; outline:none;" onfocus="this.style.borderColor='var(--blue-light)'" onblur="this.style.borderColor='var(--line-strong)'">
         <option value="">Seleccioná una opción</option>
         <option value="Sí">Sí</option>
         <option value="No">No</option>
        </select>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:6px;">
+       <label style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">¿Qué simulador usás?</label>
+       <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); margin-top:-4px;">Seleccioná una opción o más</span>
+       <div style="display:flex; flex-direction:column; gap:8px; padding:12px 16px; background:var(--bg); border:1px solid var(--line-strong); border-radius:2px;">
+        <label style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:var(--ivory); cursor:pointer;">
+         <input type="checkbox" name="simulador" value="Microsoft Flight Simulator 2020" onchange="toggleOtroSim()" style="accent-color:var(--blue-light); width:16px; height:16px; cursor:pointer;"> Microsoft Flight Simulator 2020
+        </label>
+        <label style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:var(--ivory); cursor:pointer;">
+         <input type="checkbox" name="simulador" value="Microsoft Flight Simulator 2024" onchange="toggleOtroSim()" style="accent-color:var(--blue-light); width:16px; height:16px; cursor:pointer;"> Microsoft Flight Simulator 2024
+        </label>
+        <label style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:var(--ivory); cursor:pointer;">
+         <input type="checkbox" name="simulador" value="Prepar3D" onchange="toggleOtroSim()" style="accent-color:var(--blue-light); width:16px; height:16px; cursor:pointer;"> Prepar3D
+        </label>
+        <label style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:var(--ivory); cursor:pointer;">
+         <input type="checkbox" name="simulador" value="X Plane" onchange="toggleOtroSim()" style="accent-color:var(--blue-light); width:16px; height:16px; cursor:pointer;"> X Plane
+        </label>
+        <label style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:var(--ivory); cursor:pointer;">
+         <input type="checkbox" name="simulador" value="Otro" onchange="toggleOtroSim()" style="accent-color:var(--blue-light); width:16px; height:16px; cursor:pointer;"> Otro
+        </label>
+       </div>
+      </div>
+
+      <div id="otroSimDiv" style="display:none; flex-direction:column; gap:6px;">
+       <label for="otroSim" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Si tu respuesta fue otro, contanos cuál</label>
+       <input id="otroSim" name="otroSim" type="text" style="font-family:'Barlow',sans-serif; font-size:15px; padding:14px 16px; background:var(--bg); border:1px solid var(--line-strong); color:var(--ivory); border-radius:2px; outline:none;" onfocus="this.style.borderColor='var(--blue-light)'" onblur="this.style.borderColor='var(--line-strong)'">
       </div>
 
       <div style="display:flex; flex-direction:column; gap:6px;">
@@ -240,6 +256,13 @@
 </footer>
 
 <script src="../JS/script.js"></script>
+<script>
+function toggleOtroSim() {
+ var cb = document.querySelector('input[name="simulador"][value="Otro"]');
+ var d = document.getElementById('otroSimDiv');
+ d.style.display = cb && cb.checked ? 'flex' : 'none';
+}
+</script>
 
 </body>
 </html>

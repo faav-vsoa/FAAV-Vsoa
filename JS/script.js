@@ -237,8 +237,10 @@ const SPECIFIC_ICON = {
 };
 
 /* ─── ESCALAS RELATIVAS DE AERONAVES (referencia: IA-58 Pucará) ───
-   El ancho de cada icono top-view es proporcional a la envergadura real.
-   Un C-130 se ve ~2.8× más grande que un Pucará; un F-16 ~0.65×. */
+   El ancho de cada icono top-view es proporcional a la envergadura real,
+   con compresión ^0.6 (para que los cazas chicos no queden microscópicos)
+   y un piso del 85%. Un C-130 se ve ~1.85× más grande que un Pucará;
+   un F-16 ~0.85×. */
 var AC_REF_SPAN = 14.45; // envergadura IA-58 Pucará (m)
 var AC_WINGSPAN = {
   IA58: 14.45,
@@ -254,7 +256,8 @@ var AC_WINGSPAN = {
 };
 window.acScale = function(code){
   var s = AC_WINGSPAN[String(code || '').toUpperCase()];
-  return s ? s / AC_REF_SPAN : 1;
+  if(!s) return 1;
+  return Math.max(0.85, Math.pow(s / AC_REF_SPAN, 0.6));
 };
 window.acIconStyle = function(code, base){
   return 'height:' + Math.round(base * acScale(code)) + 'px;width:auto;';

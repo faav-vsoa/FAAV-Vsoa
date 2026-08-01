@@ -598,10 +598,17 @@
   "1974289": {
     "hours": "36h 51m",
     "last": "FAG252 · 01 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZM</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">SF34</span>",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZB</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
     "airport": "SADP",
-    "aircraft": "B738",
+    "aircraft": "SF34",
     "lastFlights": [
+      {
+        "callsign": "FAG252",
+        "aircraft": "A4AR",
+        "route": "SADP → SAZB",
+        "date": "01 de ago de 2026",
+        "remark": "DOF/260801 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR CS/ZORRO /V/"
+      },
       {
         "callsign": "FAG252",
         "aircraft": "SF34",

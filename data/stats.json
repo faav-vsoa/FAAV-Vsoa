@@ -126,9 +126,9 @@
     ]
   },
   "1502178": {
-    "hours": "2791h 14m",
-    "last": "TIGER4 · 24 de jul de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">YPDN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "hours": "2791h 60m",
+    "last": "JES3999 · 02 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAEZ</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
     "airport": "SABE",
     "aircraft": "BE58",
     "lastFlights": [
@@ -596,12 +596,19 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "36h 51m",
-    "last": "FAG252 · 01 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZB</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
+    "hours": "39h 51m",
+    "last": "FAG252 · 02 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAZB</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAVC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
     "airport": "SADP",
     "aircraft": "SF34",
     "lastFlights": [
+      {
+        "callsign": "FAG252",
+        "aircraft": "A4AR",
+        "route": "SAZB → SAVC",
+        "date": "02 de ago de 2026",
+        "remark": "DOF/260802 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR CS/ZORRO /V/"
+      },
       {
         "callsign": "FAG252",
         "aircraft": "A4AR",

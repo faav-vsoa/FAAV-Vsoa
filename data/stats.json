@@ -561,18 +561,25 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "47h 34m",
-    "last": "PAMPA · 08 de ago de 2026",
-    "lastDetail": "",
+    "hours": "48h 49m",
+    "last": "VIPER · 08 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16D</span>",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [
+      {
+        "callsign": "VIPER",
+        "aircraft": "F16D",
+        "route": "SAOC → SAOC",
+        "date": "08 de ago de 2026",
+        "remark": "DOF/260808 REG/M-1008 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA STAYINFO/PRACTICA DE DESFILE 10 DE AGOSTO VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "PAMPA",
         "aircraft": "IA63",
         "route": "SADP → SADP",
         "date": "08 de ago de 2026",
-        "remark": "DOF/260808 REG/EX-03 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/PAMPA1 STAYINFO/PRACTICA DESFILE 10 AGOSTO VSOA/FAAV.COM.AR /V/"
+        "remark": "DOF/260808 REG/E-816 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA STAYINFO/PRACTICA DESFILE 10 DE AGOSTO VSOA/FAAV.COM.AR /V/"
       },
       {
         "callsign": "PAMPA3",

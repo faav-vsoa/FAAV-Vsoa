@@ -472,32 +472,25 @@
     ]
   },
   "1831103": {
-    "hours": "13h 31m",
-    "last": "PAMPA5 · 04 de ago de 2026",
-    "lastDetail": "",
-    "airport": "SAAP",
+    "hours": "14h 5m",
+    "last": "PAMPA2 · 08 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAME</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA63</span>",
+    "airport": "SAME",
     "aircraft": "IA63",
     "lastFlights": [
+      {
+        "callsign": "PAMPA2",
+        "aircraft": "IA63",
+        "route": "SAME → SADP",
+        "date": "08 de ago de 2026",
+        "remark": "DOF/260808 EET/SACF0039 SAEF0051 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/PAMPA1-2 FFLTEND VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "PAMPA5",
         "aircraft": "IA63",
         "route": "SACE → SAME",
         "date": "04 de ago de 2026",
         "remark": "DOF/260804 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE  VSOA/FAAV.COM.AR FFLT/PAMPA1-2-3-4FTLLEND /V/"
-      },
-      {
-        "callsign": "ZORRO2",
-        "aircraft": "A4AR",
-        "route": "SAOR → SACE",
-        "date": "29 de jun de 2026",
-        "remark": "DOF/260629 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE STS/MARSA STAYINFO/PRACTICA DEMO VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG250",
-        "aircraft": "A4AR",
-        "route": "SAOR → SACE",
-        "date": "29 de jun de 2026",
-        "remark": "DOF/260629 OPR/FAA RMK/OPR/ARGENTINA AIR FORCE STS/MARSA STAYINFO/PRACTICA DEMO VSOA/FAAV.COM.AR /V/"
       }
     ]
   },
@@ -575,25 +568,32 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "44h 14m",
-    "last": "HALCON2 · 07 de ago de 2026",
-    "lastDetail": "",
+    "hours": "44h 27m",
+    "last": "PAMPA3 · 08 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAME</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA63</span>",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [
+      {
+        "callsign": "PAMPA3",
+        "aircraft": "IA63",
+        "route": "SAME → SADP",
+        "date": "08 de ago de 2026",
+        "remark": "DOF/260808 REG/EX-03 EET/SAEF0035 OPR/FAG ORGN/GIUSEPPE FONTANA RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/PAMPA1-3 FFLTEND VSOA/FAAV.COM.AR /V/"
+      },
+      {
+        "callsign": "PAMPA1",
+        "aircraft": "IA63",
+        "route": "SAME → SADP",
+        "date": "08 de ago de 2026",
+        "remark": "DOF/260808 REG/EX-03 EET/SAEF0035 OPR/FAG ORGN/GIUSEPPE FONTANA RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/PAMPA1-3 FFLTEND VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "HALCON2",
         "aircraft": "A4AR",
         "route": "SAZT → SADP",
         "date": "07 de ago de 2026",
         "remark": "DOF/260807 REG/C-911 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/HALCON1-3 VSOA/FAAV.COM.AR /R/"
-      },
-      {
-        "callsign": "PAMPA2",
-        "aircraft": "IA63",
-        "route": "SACE → SAME",
-        "date": "04 de ago de 2026",
-        "remark": "DOF/260804 REG/EX-03 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE VSOA/FAAV.COM.AR FFLT/PAMPA1-2-3FTLLEND /V/"
       }
     ]
   },

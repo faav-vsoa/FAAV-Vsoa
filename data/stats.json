@@ -37,7 +37,7 @@
     ]
   },
   "1282428": {
-    "hours": "810h 22m",
+    "hours": "810h 40m",
     "last": "PUMA · 09 de ago de 2026",
     "lastDetail": "",
     "airport": "SAEZ",
@@ -142,12 +142,19 @@
     ]
   },
   "1562806": {
-    "hours": "451h 6m",
-    "last": "FAG212 · 31 de jul de 2026",
+    "hours": "453h 57m",
+    "last": "FAG212 · 09 de ago de 2026",
     "lastDetail": "",
     "airport": "SAAP",
     "aircraft": "F16",
     "lastFlights": [
+      {
+        "callsign": "FAG212",
+        "aircraft": "C130",
+        "route": "SAWG → SAWB",
+        "date": "09 de ago de 2026",
+        "remark": "PBN/A1B2B3B4B5C2C3C4D2D3D4L1O2O3O4 DOF/260809 REG/TC64 EET/SCCZ0014 SAVF0019 SCCZ0056 SAVF0116 SCCZ0145 CODE/E20008 OPR/ARGENTINA AIR FORCE PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "FAG212",
         "aircraft": "C130",
@@ -192,13 +199,6 @@
       },
       {
         "callsign": "CONDOR2",
-        "aircraft": "F16",
-        "route": "SAAP → SAOC",
-        "date": "23 de jun de 2026",
-        "remark": "DOF/260623 REG/M-1020 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/MARSA FFLT/CONDOR1-2 FFLTEND VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "CONDR11",
         "aircraft": "F16",
         "route": "SAAP → SAOC",
         "date": "23 de jun de 2026",

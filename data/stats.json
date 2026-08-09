@@ -126,9 +126,9 @@
     ]
   },
   "1502178": {
-    "hours": "2794h 6m",
-    "last": "LVHTK · 06 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAZM</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADM</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E50P</span>",
+    "hours": "2794h 31m",
+    "last": "LVHTK · 08 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADM</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E50P</span>",
     "airport": "SABE",
     "aircraft": "BE58",
     "lastFlights": [
@@ -561,7 +561,7 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "48h 49m",
+    "hours": "51h 1m",
     "last": "VIPER · 08 de ago de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16D</span>",
     "airport": "SADP",

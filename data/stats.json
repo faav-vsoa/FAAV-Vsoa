@@ -568,12 +568,19 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "55h 9m",
-    "last": "PAMPA1 · 10 de ago de 2026",
+    "hours": "55h 49m",
+    "last": "ZORRO · 10 de ago de 2026",
     "lastDetail": "",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [
+      {
+        "callsign": "ZORRO",
+        "aircraft": "B738",
+        "route": "SADP → SACO",
+        "date": "10 de ago de 2026",
+        "remark": "PBN/A1B1C1D1S1S2 DOF/260810 REG/T-99 EET/SACF0046 OPR/FAA PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR  /TCAS SIMBRIEF /V/"
+      },
       {
         "callsign": "PAMPA1",
         "aircraft": "IA63",

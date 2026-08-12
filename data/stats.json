@@ -502,12 +502,19 @@
     ]
   },
   "1835877": {
-    "hours": "102h 16m",
-    "last": "LITRO2 · 11 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">C130</span>",
+    "hours": "103h 31m",
+    "last": "FAG251 · 12 de ago de 2026",
+    "lastDetail": "",
     "airport": "SADP",
     "aircraft": "C130",
     "lastFlights": [
+      {
+        "callsign": "FAG251",
+        "aircraft": "C130",
+        "route": "SADP → SAZT",
+        "date": "12 de ago de 2026",
+        "remark": "PBN/B2B3B4D2D3O2O3S1 DAT/V DOF/260812 REG/8TCA SEL/AHJL OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "LITRO2",
         "aircraft": "C130",
@@ -549,20 +556,6 @@
         "route": "SAAP → SATR",
         "date": "01 de jun de 2026",
         "remark": "PBN/A1B1C1D1O1S2 DOF/260602 REG/GINEO EET/SARR0016 OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG251",
-        "aircraft": "A20N",
-        "route": "SADP → SAAP",
-        "date": "31 de may de 2026",
-        "remark": "PBN/A1B1C1D1O1S2 DOF/260531 REG/GINEO OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG251",
-        "aircraft": "C130",
-        "route": "SADP → SADL",
-        "date": "28 de may de 2026",
-        "remark": "PBN/B2B3B4D2D3O2O3S1 DAT/V DOF/260528 REG/8TCA SEL/AHJL OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
       }
     ]
   },

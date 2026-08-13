@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2798h 18m",
-    "last": "BOEING · 11 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B737</span>",
+    "hours": "2800h 46m",
+    "last": "JES3106 · 12 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SACO</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
     "airport": "SABE",
     "aircraft": "E50P",
     "lastFlights": [
@@ -626,25 +626,25 @@
     ]
   },
   "2005108": {
-    "hours": "34h 13m",
-    "last": "HALCON1 · 07 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAZT</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4</span>",
+    "hours": "35h 2m",
+    "last": "VIPER · 12 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZT</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SADP",
     "aircraft": "A4",
     "lastFlights": [
+      {
+        "callsign": "VIPER",
+        "aircraft": "F16",
+        "route": "SADP → SAZT",
+        "date": "12 de ago de 2026",
+        "remark": "DOF/260812 REG/M-1004 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "PAMPA4",
         "aircraft": "IA63",
         "route": "SACE → SAME",
         "date": "04 de ago de 2026",
         "remark": "DOF/260804 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/PAMPA1-4 FFLTEND VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "TIZA1",
-        "aircraft": "C130",
-        "route": "SADP → SADP",
-        "date": "31 de jul de 2026",
-        "remark": "DOF/260731 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/TIZA1-3 FFLTEND STAYINFO/PRACTICAS DE FORMACION PAL/NIN FL120 NIN/PAL FL110 VSOA/FAAV.COM.AR /V/"
       }
     ]
   }

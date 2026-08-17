@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2800h 46m",
-    "last": "JES3106 · 12 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SACO</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
+    "hours": "2802h 16m",
+    "last": "JES3107 · 17 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SACO</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
     "airport": "SABE",
     "aircraft": "E50P",
     "lastFlights": [

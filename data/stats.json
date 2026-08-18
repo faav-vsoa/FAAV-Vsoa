@@ -37,7 +37,7 @@
     ]
   },
   "1282428": {
-    "hours": "811h 56m",
+    "hours": "812h 26m",
     "last": "PUMA · 17 de ago de 2026",
     "lastDetail": "",
     "airport": "SAOC",
@@ -133,20 +133,12 @@
     ]
   },
   "1502178": {
-    "hours": "2802h 16m",
-    "last": "JES3107 · 17 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SACO</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
+    "hours": "2803h 7m",
+    "last": "LVHTK · 18 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SULS</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E50P</span>",
     "airport": "SABE",
     "aircraft": "E50P",
-    "lastFlights": [
-      {
-        "callsign": "BOEING",
-        "aircraft": "B737",
-        "route": "SADP → SADP",
-        "date": "11 de ago de 2026",
-        "remark": "DOF/260811 REG/T-99 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA BOEING FOKKER LITRO VSOA/FAAV.COM.AR /V/"
-      }
-    ]
+    "lastFlights": []
   },
   "1562806": {
     "hours": "456h 5m",

@@ -133,17 +133,17 @@
     ]
   },
   "1502178": {
-    "hours": "2803h 7m",
-    "last": "LVHTK · 18 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SULS</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E50P</span>",
+    "hours": "2800h 40m",
+    "last": "JES3105 · 19 de ago de 2026",
+    "lastDetail": "",
     "airport": "SABE",
     "aircraft": "E50P",
     "lastFlights": []
   },
   "1562806": {
-    "hours": "456h 5m",
-    "last": "CONDOR · 15 de ago de 2026",
-    "lastDetail": "",
+    "hours": "457h 2m",
+    "last": "ARG1630 · 18 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B738</span>",
     "airport": "SAOC",
     "aircraft": "F16",
     "lastFlights": [
@@ -167,20 +167,6 @@
         "route": "SAWG → SAWB",
         "date": "09 de ago de 2026",
         "remark": "PBN/A1B2B3B4B5C2C3C4D2D3D4L1O2O3O4 DOF/260809 REG/TC64 EET/SCCZ0014 SAVF0019 SCCZ0056 SAVF0116 SCCZ0145 CODE/E20008 OPR/ARGENTINA AIR FORCE PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG212",
-        "aircraft": "C130",
-        "route": "SAWG → SAWB",
-        "date": "31 de jul de 2026",
-        "remark": "PBN/A1B2B3B4B5C2C3C4D2D3D4L1O2O3O4 NAV/GPS DOF/260731 REG/TC69 EET/SCCZ0014 SAVF0019 SCCZ0051 SAVF0109 SCCZ0137 CODE/E0117D OPR/ARGENTINA AIR FORCE PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG212",
-        "aircraft": "F28",
-        "route": "SAVC → SAWG",
-        "date": "29 de jul de 2026",
-        "remark": "PBN/B3B4B5D3D4 DOF/260730 REG/TC53 OPR/FAG PER/B RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
       }
     ]
   },
@@ -554,8 +540,8 @@
   },
   "1974289": {
     "hours": "62h 32m",
-    "last": "FAG252 · 16 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAVC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">SF34</span>",
+    "last": "ZORRO · 19 de ago de 2026",
+    "lastDetail": "",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [

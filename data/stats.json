@@ -355,7 +355,7 @@
     ]
   },
   "1764792": {
-    "hours": "45h 30m",
+    "hours": "48h 3m",
     "last": "BUHO · 20 de ago de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">TUCA</span>",
     "airport": "SADP",
@@ -385,7 +385,7 @@
     ]
   },
   "1785540": {
-    "hours": "150h 11m",
+    "hours": "152h 45m",
     "last": "PAMPA2 · 20 de ago de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA63</span>",
     "airport": "SADP",
@@ -443,7 +443,7 @@
     ]
   },
   "1831103": {
-    "hours": "21h 14m",
+    "hours": "23h 45m",
     "last": "BUHO2 · 20 de ago de 2026",
     "lastDetail": "",
     "airport": "SADP",
@@ -546,7 +546,7 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "64h 13m",
+    "hours": "66h 8m",
     "last": "LV294 · 20 de ago de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAAC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAAC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">M20T</span>",
     "airport": "SADP",
@@ -576,9 +576,9 @@
     ]
   },
   "2005108": {
-    "hours": "35h 3m",
+    "hours": "37h 18m",
     "last": "PAMPA1 · 20 de ago de 2026",
-    "lastDetail": "",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA63</span>",
     "airport": "SADP",
     "aircraft": "A4",
     "lastFlights": [

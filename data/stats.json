@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2810h 25m",
-    "last": "ARG1357 · 20 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SUMU</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E190</span>",
+    "hours": "2811h 31m",
+    "last": "ARG1602 · 21 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZM</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E190</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
@@ -164,7 +164,7 @@
     ]
   },
   "1575754": {
-    "hours": "817h 24m",
+    "hours": "823h 31m",
     "last": "HYT9158 · 21 de ago de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">VIDP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">ZPPP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B752</span>",
     "airport": "EDDP",
@@ -576,12 +576,19 @@
     ]
   },
   "2005108": {
-    "hours": "37h 18m",
-    "last": "PAMPA1 · 20 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SATR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA63</span>",
+    "hours": "40h 17m",
+    "last": "FAG255 · 21 de ago de 2026",
+    "lastDetail": "",
     "airport": "SADP",
     "aircraft": "A4",
     "lastFlights": [
+      {
+        "callsign": "FAG255",
+        "aircraft": "C130",
+        "route": "SADP → SAVC",
+        "date": "21 de ago de 2026",
+        "remark": "DOF/260821 REG/TC-66 RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "PAMPA1",
         "aircraft": "IA63",

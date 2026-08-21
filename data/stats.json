@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2809h 36m",
-    "last": "CMP168 · 19 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SACO</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
+    "hours": "2810h 25m",
+    "last": "ARG1357 · 20 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SUMU</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">E190</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
@@ -165,8 +165,8 @@
   },
   "1575754": {
     "hours": "817h 24m",
-    "last": "TEZ1601 · 19 de jun de 2026",
-    "lastDetail": "",
+    "last": "HYT9158 · 21 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">VIDP</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">ZPPP</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B752</span>",
     "airport": "EDDP",
     "aircraft": "B752",
     "lastFlights": []

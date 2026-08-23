@@ -37,7 +37,7 @@
     ]
   },
   "1282428": {
-    "hours": "812h 26m",
+    "hours": "818h 17m",
     "last": "TC66 · 23 de ago de 2026",
     "lastDetail": "",
     "airport": "SAOC",
@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2810h 4m",
+    "hours": "2808h 56m",
     "last": "LVWOC · 23 de ago de 2026",
-    "lastDetail": "",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">LJ25</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
@@ -164,8 +164,8 @@
     ]
   },
   "1575754": {
-    "hours": "828h 53m",
-    "last": "CSS7103 · 22 de ago de 2026",
+    "hours": "830h 36m",
+    "last": "CSS7208 · 23 de ago de 2026",
     "lastDetail": "",
     "airport": "EDDP",
     "aircraft": "B752",

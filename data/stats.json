@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2811h 34m",
-    "last": "LVMEP · 24 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAAJ</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">PA31</span>",
+    "hours": "2812h 17m",
+    "last": "LVYCS · 24 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SA8Y</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOV</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">BE20</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
@@ -546,7 +546,7 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "70h 13m",
+    "hours": "74h 34m",
     "last": "ZORRO · 24 de ago de 2026",
     "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
     "airport": "SADP",

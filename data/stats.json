@@ -133,16 +133,16 @@
     ]
   },
   "1502178": {
-    "hours": "2808h 56m",
-    "last": "LVWOC · 23 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZN</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">LJ25</span>",
+    "hours": "2811h 34m",
+    "last": "LVMEP · 24 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAAJ</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">PA31</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
   },
   "1562806": {
-    "hours": "457h 5m",
-    "last": "FAG212 · 22 de ago de 2026",
+    "hours": "457h 6m",
+    "last": "FAG212 · 23 de ago de 2026",
     "lastDetail": "",
     "airport": "SAOC",
     "aircraft": "F16",
@@ -164,9 +164,9 @@
     ]
   },
   "1575754": {
-    "hours": "830h 36m",
-    "last": "CSS7208 · 23 de ago de 2026",
-    "lastDetail": "",
+    "hours": "833h 52m",
+    "last": "ASV745 · 24 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">RKSI</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">RJOH</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A321</span>",
     "airport": "EDDP",
     "aircraft": "B752",
     "lastFlights": []
@@ -547,11 +547,18 @@
   },
   "1974289": {
     "hours": "70h 13m",
-    "last": "ZORRO · 21 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAME</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAME</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">IA63</span>",
+    "last": "ZORRO · 24 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [
+      {
+        "callsign": "ZORRO",
+        "aircraft": "A4AR",
+        "route": "SAOR → SAOR",
+        "date": "24 de ago de 2026",
+        "remark": "DOF/260823 REG/C-926 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "ZORRO",
         "aircraft": "IA63",
@@ -565,13 +572,6 @@
         "route": "SACE → SATR",
         "date": "19 de ago de 2026",
         "remark": "DOF/260819 REG/AX-07 EET/SARF0050 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG252",
-        "aircraft": "SF34",
-        "route": "SADP → SAVC",
-        "date": "16 de ago de 2026",
-        "remark": "DOF/260816 REG/T-35 EET/SAVF0120 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR CS/ZORRO /V/"
       }
     ]
   },

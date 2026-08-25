@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2812h 17m",
-    "last": "LVYCS · 24 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SA8Y</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOV</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">BE20</span>",
+    "hours": "2816h 51m",
+    "last": "JES3019 · 24 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SASA</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
@@ -164,10 +164,10 @@
     ]
   },
   "1575754": {
-    "hours": "833h 52m",
-    "last": "ANA386 · 24 de ago de 2026",
+    "hours": "835h 41m",
+    "last": "ANA321 · 25 de ago de 2026",
     "lastDetail": "",
-    "airport": "EDDP",
+    "airport": "RJTT",
     "aircraft": "B752",
     "lastFlights": []
   },

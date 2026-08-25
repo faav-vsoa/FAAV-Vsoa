@@ -37,7 +37,7 @@
     ]
   },
   "1282428": {
-    "hours": "818h 17m",
+    "hours": "822h 17m",
     "last": "TC66 · 25 de ago de 2026",
     "lastDetail": "",
     "airport": "SAOC",
@@ -165,7 +165,7 @@
   },
   "1575754": {
     "hours": "838h 1m",
-    "last": "ANA1181 · 25 de ago de 2026",
+    "last": "JAL2803 · 25 de ago de 2026",
     "lastDetail": "",
     "airport": "RJTT",
     "aircraft": "B738",
@@ -547,8 +547,8 @@
   },
   "1974289": {
     "hours": "74h 34m",
-    "last": "ZORRO · 24 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAOR</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A4AR</span>",
+    "last": "ZORRO · 25 de ago de 2026",
+    "lastDetail": "",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [
@@ -565,13 +565,6 @@
         "route": "SAME → SAME",
         "date": "21 de ago de 2026",
         "remark": "DOF/260821 REG/E-816 RMK/OPR/ARGENTINA AIR FORCE /STS/STATAE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "ZORRO",
-        "aircraft": "IA58",
-        "route": "SACE → SATR",
-        "date": "19 de ago de 2026",
-        "remark": "DOF/260819 REG/AX-07 EET/SARF0050 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
       }
     ]
   },

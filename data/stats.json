@@ -133,9 +133,9 @@
     ]
   },
   "1502178": {
-    "hours": "2816h 51m",
-    "last": "JES3019 · 24 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SASA</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">A320</span>",
+    "hours": "2818h 21m",
+    "last": "DLH510 · 26 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">EDDF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAEZ</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B748</span>",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
@@ -164,7 +164,7 @@
     ]
   },
   "1575754": {
-    "hours": "838h 1m",
+    "hours": "839h 12m",
     "last": "JAL2803 · 25 de ago de 2026",
     "lastDetail": "",
     "airport": "RJTT",
@@ -480,12 +480,19 @@
     ]
   },
   "1835877": {
-    "hours": "103h 31m",
-    "last": "FAG251 · 12 de ago de 2026",
-    "lastDetail": "",
+    "hours": "107h 16m",
+    "last": "FAG251 · 25 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAZT</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAVC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">C130</span>",
     "airport": "SADP",
     "aircraft": "C130",
     "lastFlights": [
+      {
+        "callsign": "FAG251",
+        "aircraft": "C130",
+        "route": "SAZT → SAVC",
+        "date": "25 de ago de 2026",
+        "remark": "PBN/B2B3B4D2D3O2O3S1 DAT/V DOF/260826 REG/8TCA EET/SAVF0054 SEL/AHJL OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "FAG251",
         "aircraft": "C130",
@@ -520,20 +527,6 @@
         "route": "SAZM → SADP",
         "date": "02 de jun de 2026",
         "remark": "PBN/A1B1C1D1O1S2 DOF/260602 REG/N251SB OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG251",
-        "aircraft": "C130",
-        "route": "SADP → SAAP",
-        "date": "02 de jun de 2026",
-        "remark": "PBN/B2B3B4D2D3O2O3S1 DAT/V DOF/260602 REG/8TCA SEL/AHJL OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "FAG251",
-        "aircraft": "A20N",
-        "route": "SAAP → SATR",
-        "date": "01 de jun de 2026",
-        "remark": "PBN/A1B1C1D1O1S2 DOF/260602 REG/GINEO EET/SARR0016 OPR/FAG PER/C RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
       }
     ]
   },
@@ -546,12 +539,19 @@
     "lastFlights": []
   },
   "1974289": {
-    "hours": "74h 34m",
+    "hours": "80h 7m",
     "last": "ZORRO · 25 de ago de 2026",
     "lastDetail": "",
     "airport": "SADP",
     "aircraft": "IA63",
     "lastFlights": [
+      {
+        "callsign": "ZORRO",
+        "aircraft": "IA63",
+        "route": "SAME → SAME",
+        "date": "25 de ago de 2026",
+        "remark": "DOF/260825 REG/E-816 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/"
+      },
       {
         "callsign": "ZORRO",
         "aircraft": "A4AR",

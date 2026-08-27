@@ -216,7 +216,7 @@ section{position:relative; z-index:1; padding:104px 0;}
 .anniv-mid p{color:var(--muted); font-size:15px; max-width:480px;}
 
 /* operaciones grid */
-.ops-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+.ops-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
 .op-card{
   background:var(--bg); padding:34px 30px; position:relative;
   display:flex; flex-direction:column; align-items:center; gap:16px; min-height:230px;
@@ -449,7 +449,7 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
   .hero{padding-top:230px;}
   .radar-wrap{max-width:340px;}
   .mision-grid{grid-template-columns:1fr;}
-  .ops-grid{grid-template-columns:repeat(3,1fr);}
+  .ops-grid{grid-template-columns:repeat(2,1fr);}
   .anniv-grid{grid-template-columns:1fr; text-align:left;}
   .foot-grid{grid-template-columns:1fr 1fr; row-gap:36px;}
   .media-grid{grid-template-columns:1fr;}

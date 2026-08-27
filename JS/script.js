@@ -589,7 +589,7 @@ function renderCalendarEvents(events, containerId) {
     return;
   }
   const logoMap = {
-    faav: '../img/Logo FAAV/Logo Faav.png',
+    faav: '../img/Logo FAAV/Logo Faav.png?v=2',
     vatsim: '../img/Logo Vatsim Argentina/Logo Vatsim Argentina.png',
     vsoa: '../img/Logo VSOA/Logo VSOA.png'
   };

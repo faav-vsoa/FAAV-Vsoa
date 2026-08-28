@@ -553,8 +553,12 @@ function classifyEvents(vatsimEvents) {
     else { argar.push({ ...e, isVatsimAR: true }); }
   });
 
+  const argarLinks = new Set(argar.map(a => a.link));
+  const vsoaLinks = new Set(vsoa.map(a => a.link));
+
   vatsimEvents.forEach(e => {
     const isSAM = e.organisers && e.organisers.some(o => o.division === 'SAM');
+    if (!isSAM) return;
     const card = {
       name: e.name,
       start: e.startTime,
@@ -563,7 +567,12 @@ function classifyEvents(vatsimEvents) {
       desc: stripHTML(e.shortDescription || ''),
       link: e.link || '',
     };
-    if (isSAM) { vsoa.push(card); }
+    const hasARG = (e.airports || []).some(a => /^SA/i.test(a.icao));
+    if (hasARG) {
+      if (!argarLinks.has(card.link)) { argar.push({ ...card, isVatsimAR: true }); }
+    } else {
+      if (!vsoaLinks.has(card.link)) { vsoa.push({ ...card, isVSOA: true }); }
+    }
   });
 
   faav.sort((a, b) => new Date(a.start) - new Date(b.start));

@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -77,32 +77,48 @@
   <div class="navlinks" id="navlinks">
    <a href="index.html#mision">Institución</a>
    <a href="index.html#operaciones">Operaciones</a>
-   <a href="index.html#pilotos">Pilotos</a>
+   <a href="pilotos-online.html">Pilotos</a>
    <a href="index.html#brigadas">Brigadas</a>
    <a href="index.html#comunidad">Comunidad</a>
+   <a href="index.html#calendario">Calendario</a>
    <a href="reglamento.html">Reglamento</a>
    <a href="redes.html" class="active">REDES</a>
+   <a href="index.html#sumate" class="mobile-nav-btn">Sumarme</a>
   </div>
   <div class="navcta">
-   <a href="index.html#pilotos" class="btn btn-ghost">Sala de pilotos</a>
-   <a href="index.html#sumate" class="btn btn-primary">Sumarme</a>
-   <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+   <a href="index.html#sumate" class="btn btn-ghost desktop-only">Sumarme</a>
+   <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
    </div></nav></header>
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
 
 <main id="top">
 
- <section class="social-section">
-  <div class="wrap social-wrap">
-   <a href="index.html#top" class="back-link">
-    <svg style="width:14px;height:14px; transform:scaleX(-1)"><use href="#ic-arrow"/></svg>
-    Volver al menú principal
-   </a>
-
-   <div class="social-hero" data-reveal>
-    <span class="hero-coord">FAAV <b> - REDES </b></span>
+ <section class="hero">
+  <div class="wrap hero-grid">
+   <div>
+    <div class="hero-coord">FAAV <b> - REDES </b></div>
     <h1>Nuestras <em>redes</em></h1>
     <p class="lead">Seguí a la FAAV y enterate de operaciones, eventos y novedades de la comunidad.</p>
+    <div class="hero-actions">
+     <a href="index.html" class="btn btn-ghost">Volver al inicio</a>
+    </div>
    </div>
+   <div class="radar-wrap" data-reveal>
+    <div class="radar-ring r1"></div>
+    <div class="radar-ring r2"></div>
+    <div class="radar-ring r3"></div>
+    <div class="radar-cross"></div>
+    <div class="radar-sweep"></div>
+    <span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span>
+    <div class="radar-core">
+    <img src="../img/Logo FAAV/Logo Faav.png?v=2" alt="Escudo FAAV" style="height:50px;width:auto;">
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="social-section">
+  <div class="wrap social-wrap">
 
    <div class="social-links" data-reveal>
     <a href="https://www.instagram.com/faav_arg/" class="social-btn instagram" target="_blank" rel="noopener">
@@ -135,7 +151,7 @@
  <div class="wrap">
   <div class="foot-grid">
    <div class="foot-brand">
-    <img src="../img/Logo FAAV/Logo Faav.png?v=2" alt="Escudo FAAV" style="height:38px;width:auto;" alt="Escudo FAAV">
+<img src="../img/Logo FAAV/Logo Faav.png?v=2" alt="Escudo FAAV">
     <div>
      <b style="font-family:'Oswald',sans-serif; letter-spacing:0.03em; display:block;">FAAV - VSOA</b>
      <span style="font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.03em; color:var(--muted); display:block; margin-top:4px; max-width:280px;">FUERZAS ARMADAS ARGENTINAS VSOA - VATSIM SPECIAL OPERATION ASOCIATED</span>

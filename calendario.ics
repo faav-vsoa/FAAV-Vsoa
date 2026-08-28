@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//FAAV VSOA//Calendario de eventos//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FAAV - VSOA
+BEGIN:VEVENT
+UID:faav-ferry-f16-ii@faav-vsoa
+DTSTAMP:20260827T000000Z
+DTSTART:20260926T220000Z
+DTEND:20260927T020000Z
+SUMMARY:FERRY F16 II
+DESCRIPTION:Segundo vuelo ferry de los F-16 de la Fuerza Aerea Argentina.
+LOCATION:EKSP, SAOC
+END:VEVENT
+BEGIN:VEVENT
+UID:faav-sabe-scel-fly-in@faav-vsoa
+DTSTAMP:20260827T000000Z
+DTSTART:20260823T200000Z
+DTEND:20260823T230000Z
+SUMMARY:SABE - SCEL Fly-In
+DESCRIPTION:Cruza los Andes en una de las rutas mas impresionantes de Sudamerica. Aeroparque Jorge Newbery (SABE) a Santiago de Chile (SCEL).
+LOCATION:SABE, SCEL
+URL;VALUE=URI:https://my.vatsim.net/events/sabe-scel-fly-in
+END:VEVENT
+BEGIN:VEVENT
+UID:faav-sarr-fly-inn@faav-vsoa
+DTSTAMP:20260827T000000Z
+DTSTART:20260809T200000Z
+DTEND:20260809T230000Z
+SUMMARY:SARR Fly-Inn
+DESCRIPTION:Operacion en la FIR Resistencia (SARR). Aeropuerto principal: SARI - Cataratas del Iguazu.
+LOCATION:SARI, SARE, SARF, SARC
+URL;VALUE=URI:https://my.vatsim.net/events/sarr-fly-inn-2
+END:VEVENT
+BEGIN:VEVENT
+UID:faav-pitch-black@faav-vsoa
+DTSTAMP:20260827T000000Z
+DTSTART:20260718T173000Z
+DTEND:20260719T173000Z
+SUMMARY:Exercice Pitch Black
+DESCRIPTION:Evento internacional de la Fuerza Aerea Australiana en Darwin, Australia. La FAAV estara presente.
+LOCATION:YPTN, YPDN
+URL;VALUE=URI:https://my.vatsim.net/events/uruguayan-vfr-tour
+END:VEVENT
+END:VCALENDAR

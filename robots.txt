@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faav-vsoa.github.io/FAAV-Vsoa/sitemap.xml

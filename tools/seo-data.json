@@ -1,0 +1,20 @@
+[
+  { "rel": "HTML/index.html", "desc": "FAAV - VSOA | Fuerzas Armadas Argentinas VSOA: comunidad argentina de simulación aérea en VATSIM. Operaciones, pilotos en vivo, calendario de eventos y brigadas de todo el país." },
+  { "rel": "HTML/inscripcion.html", "desc": "Formulario de inscripción a la FAAV - VSOA. Sumate a la comunidad argentina de simulación aérea en VATSIM." },
+  { "rel": "HTML/login.html", "desc": "Acceso al perfil de piloto de la FAAV - VSOA." },
+  { "rel": "HTML/operaciones.html", "desc": "Operaciones de la FAAV en VATSIM: misiones, escalas y procedimientos de la comunidad argentina de simulación aérea." },
+  { "rel": "HTML/piloto.html", "desc": "Perfil del piloto de la FAAV - VSOA: horas de vuelo, aeronaves e historial en la comunidad." },
+  { "rel": "HTML/pilotos-online.html", "desc": "Pilotos de la FAAV volando ahora mismo en VATSIM, en vivo con mapa de Argentina, roster y estadísticas." },
+  { "rel": "HTML/pilotos.html", "desc": "Sala de pilotos de la FAAV - VSOA: conocé a los pilotos activos de la comunidad y sus horas de vuelo." },
+  { "rel": "HTML/redes.html", "desc": "Redes sociales de la FAAV - VSOA: Instagram, YouTube y TikTok de la comunidad argentina de simulación aérea." },
+  { "rel": "HTML/reglamento.html", "desc": "Reglamento de la FAAV - VSOA: normas y procedimientos de la comunidad y sus brigadas." },
+  { "rel": "HTML/todos-pilotos.html", "desc": "Todos los pilotos de la FAAV - VSOA con horas de vuelo y registro en VATSIM." },
+  { "rel": "storage/aviones-mfs/index.html", "desc": "Aeronaves de la FAAV para Microsoft Flight Simulator 2020/2024." },
+  { "rel": "storage/aviones-p3d/index.html", "desc": "Aeronaves de la FAAV para Prepar3D." },
+  { "rel": "storage/escenarios-mfs/index.html", "desc": "Escenarios de la FAAV para Microsoft Flight Simulator 2020/2024." },
+  { "rel": "storage/escenarios-p3d/index.html", "desc": "Escenarios de la FAAV para Prepar3D." },
+  { "rel": "storage/escuela-de-aviacion-militar-virtual/index.html", "desc": "Programa de entrenamiento de la Escuela de Aviación Militar Virtual de la FAAV." },
+  { "rel": "storage/liveries/index.html", "desc": "Liveries de la FAAV - VSOA: pinturas oficiales de las aeronaves de la comunidad." },
+  { "rel": "storage/manuales/index.html", "desc": "Manuales y documentos de la FAAV - VSOA." },
+  { "rel": "storage/procedimientos/index.html", "desc": "Procedimientos operativos de la FAAV - VSOA." }
+]

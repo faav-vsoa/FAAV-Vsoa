@@ -636,6 +636,8 @@ footer{border-top:1px solid var(--line); padding:64px 0 32px; background:#040914
 }
 .cal-tab.active{background:var(--blue); color:#04101f; font-weight:700;}
 .cal-tab:hover:not(.active){color:var(--ivory); background:rgba(127,184,242,0.1);}
+.cal-bar{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:14px; font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted);}
+.cal-bar .op-link{font-size:10.5px;}
 .cal-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
 .cal-card{
   background:var(--card-bg); padding:24px 24px; display:flex; flex-direction:column; gap:12px;

@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAAV - VSOA | Fuerzas Armadas Argentinas VSOA</title>
-  <meta name="description" content="FAAV - VSOA">
-  <link rel="icon" type="image/png" href="../img/Logo FAAV/Logo Faav.png?v=2">
-  <!-- Para redes sociales: reemplazar el content de og:url y og:image por la URL final una vez que el sitio este listo -->
+  <title>FAAV - VSOA | Fuerzas Armadas Argentinas VSOA</title>  <meta name="description" content="FAAV - VSOA | Fuerzas Armadas Argentinas VSOA: comunidad argentina de simulación aérea en VATSIM. Operaciones, pilotos en vivo, calendario de eventos y brigadas de todo el país.">
+  <link rel="canonical" href="https://faav-vsoa.github.io/FAAV-Vsoa/HTML/index.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FAAV - VSOA">
   <meta property="og:title" content="FAAV - VSOA | Fuerzas Armadas Argentinas VSOA">
-  <meta property="og:description" content="FAAV - VSOA: comunidad argentina de simulación aérea (VATSIM VSOA)">
-  <meta property="og:image" content="REEMPLAZAR-POR-URL-PUBLICA-DEL-LOGO.png">
-  <meta property="og:url" content="REEMPLAZAR-POR-URL-FINAL-DEL-SITIO">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="FAAV - VSOA | Fuerzas Armadas Argentinas VSOA: comunidad argentina de simulación aérea en VATSIM. Operaciones, pilotos en vivo, calendario de eventos y brigadas de todo el país.">
+  <meta property="og:image" content="https://faav-vsoa.github.io/FAAV-Vsoa/img/og-faav.png">
+  <meta property="og:url" content="https://faav-vsoa.github.io/FAAV-Vsoa/HTML/index.html">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FAAV - VSOA | Fuerzas Armadas Argentinas VSOA">
-  <meta name="twitter:description" content="FAAV - VSOA: comunidad argentina de simulación aérea (VATSIM VSOA)">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <meta name="twitter:description" content="FAAV - VSOA | Fuerzas Armadas Argentinas VSOA: comunidad argentina de simulación aérea en VATSIM. Operaciones, pilotos en vivo, calendario de eventos y brigadas de todo el país.">
+  <meta name="twitter:image" content="https://faav-vsoa.github.io/FAAV-Vsoa/img/og-faav.png">
+
+<link rel="icon" type="image/png" href="../img/Logo FAAV/Logo Faav.png?v=3"><link rel="apple-touch-icon" href="../img/Logo FAAV/Logo Faav.png?v=3">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <link rel="stylesheet" href="../CSS/styles.css?v=3">
+  <link rel="stylesheet" href="../CSS/styles.css?v=4">
 </head>
 <body>
 
@@ -66,7 +67,7 @@
 <header>
   <nav class="wrap">
     <a href="#top" class="brand">
-      <img src="../img/Logo FAAV/Logo Faav.png?v=2" alt="Escudo FAAV">
+      <img src="../img/Logo FAAV/Logo Faav.png?v=3" alt="Escudo FAAV">
       <span class="brand-text"><b>FAAV - VSOA</b> <span>Fuerzas Armadas Argentinas VSOA</span></span>
     </a>
     <div class="header-links-row">
@@ -113,7 +114,7 @@
     <div class="radar-sweep"></div>
     <span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span>
     <div class="radar-core">
-    <img src="../img/Logo FAAV/Logo Faav.png?v=2" alt="Escudo FAAV" style="height:50px;width:auto;">
+    <img src="../img/Logo FAAV/Logo Faav.png?v=3" alt="Escudo FAAV" style="height:50px;width:auto;">
     </div>
    </div>
   </div>
@@ -272,13 +273,17 @@
     <h2>Calendario de eventos</h2>
     <p>Próximos eventos de VATSIM y operaciones especiales de la FAAV.</p>
    </div>
-   <div data-reveal>
+<div data-reveal>
 <div class="cal-tabs">
       <button class="cal-tab active" data-tab="faav">FAAV</button>
       <button class="cal-tab" data-tab="vsoa">Eventos VSOA</button>
       <button class="cal-tab" data-tab="argar">VATSIM Argentina</button>
       <button class="cal-tab" data-tab="past">Finalizados</button>
      </div>
+   </div>
+   <div class="cal-bar" data-reveal>
+    <span id="cal-status" class="cal-status"></span>
+    <a href="../calendario.ics" class="op-link" download>Suscribirme al calendario (.ics) <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>
    </div>
    <div id="cal-grid-faav" class="cal-grid" data-reveal></div>
    <div id="cal-grid-vsoa" class="cal-grid" data-reveal style="display:none;"></div>
@@ -326,7 +331,7 @@
  <div class="wrap">
   <div class="foot-grid">
    <div class="foot-brand">
-    <img src="../img/Logo FAAV/Logo Faav.png?v=2" alt="Escudo FAAV">
+    <img src="../img/Logo FAAV/Logo Faav.png?v=3" alt="Escudo FAAV">
     <div>
      <b style="font-family:'Oswald',sans-serif; letter-spacing:0.03em; display:block;">FAAV - VSOA</b>
      <span style="font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.03em; color:var(--muted); display:block; margin-top:4px; max-width:280px;">FUERZAS ARMADAS ARGENTINAS VSOA - VATSIM SPECIAL OPERATION ASOCIATED</span>
@@ -363,5 +368,5 @@
  </div>
 </footer>
 
-<script src="../JS/script.js?v=13"></script>
+<script src="../JS/script.js?v=14"></script>
 </body>

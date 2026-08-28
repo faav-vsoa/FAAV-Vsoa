@@ -1,4 +1,4 @@
-const burger = document.getElementById('burger');
+﻿const burger = document.getElementById('burger');
 const navlinks = document.getElementById('navlinks');
 const mobileOverlay = document.getElementById('mobileMenuOverlay');
 
@@ -390,7 +390,7 @@ function updateMap(livePilots) {
   }
 }
 
-  function renderPilots(livePilots){
+  function renderPilots(livePilots, statusNote){
     const grid = document.getElementById('pilot-grid');
     const onlineCountEl = document.getElementById('tracker-online-count');
     const totalCountEl = document.getElementById('tracker-total-count');
@@ -461,7 +461,11 @@ function updateMap(livePilots) {
     });
 
     onlineCountEl.textContent = onlineCount;
-    totalCountEl.textContent = `${PILOTS.length} en el roster · actualizado ${new Date().toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'})}`;
+    if(statusNote){
+      totalCountEl.textContent = `${PILOTS.length} en el roster · datos de las ${statusNote} (sin conexión)`;
+    } else {
+      totalCountEl.textContent = `${PILOTS.length} en el roster · actualizado ${new Date().toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'})}`;
+    }
     if(trackerSection) trackerSection.style.display = onlineCount > 0 ? '' : 'none';
 }
 
@@ -470,13 +474,23 @@ function updateMap(livePilots) {
     try{
       const res = await fetch('https://data.vatsim.net/v3/vatsim-data.json');
       const data = await res.json();
+      const cache = { at: new Date().toISOString(), pilots: (data.pilots||[]).filter(p => PILOTS.some(x => p.callsign === x.callsign)) };
+      try { localStorage.setItem('faav_live_cache', JSON.stringify(cache)); } catch(e){}
       renderPilots(data.pilots || []);
       updateMap(data.pilots || []);
     }catch(err){
+      let cached = null;
+      try { cached = JSON.parse(localStorage.getItem('faav_live_cache') || 'null'); } catch(e){}
       const totalCountEl = document.getElementById('tracker-total-count');
-      if(totalCountEl) totalCountEl.textContent = 'No se pudo conectar con VATSIM en este momento — reintentando…';
-      renderPilots(null);
-      updateMap(null);
+      if (cached && Array.isArray(cached.pilots) && (Date.now() - new Date(cached.at).getTime()) < 10*60*1000){
+        const t = new Date(cached.at).toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'});
+        renderPilots(cached.pilots, t);
+        updateMap(cached.pilots);
+      } else {
+        if(totalCountEl) totalCountEl.textContent = 'No se pudo conectar con VATSIM en este momento — reintentando…';
+        renderPilots(null);
+        updateMap(null);
+      }
     }
   }
   refreshPilots();
@@ -589,6 +603,22 @@ function classifyEvents(vatsimEvents) {
   return { faav: upcoming(faav), vsoa: upcoming(vsoa), argar: upcoming(argar), past };
 }
 
+function toGoogleDT(iso){
+  if(!iso) return '';
+  const d = new Date(iso);
+  if(isNaN(d.getTime())) return '';
+  const p = function(n){ return String(n).padStart(2, '0'); };
+  return d.getUTCFullYear() + p(d.getUTCMonth()+1) + p(d.getUTCDate()) + 'T' + p(d.getUTCHours()) + p(d.getUTCMinutes()) + p(d.getUTCSeconds()) + 'Z';
+}
+function googleCalLink(e){
+  const s = toGoogleDT(e.start);
+  if(!s) return '';
+  let en = toGoogleDT(e.end);
+  if(!en){ en = toGoogleDT(new Date(new Date(e.start).getTime() + 2*3600*1000)); }
+  const q = ['text=' + encodeURIComponent(e.name), 'dates=' + s + '/' + en, 'details=' + encodeURIComponent(e.desc || ''), 'location=' + encodeURIComponent((e.airports || []).join(', '))].join('&');
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&' + q;
+}
+
 function renderCalendarEvents(events, containerId) {
   const grid = document.getElementById(containerId);
   if (!grid) return;
@@ -597,7 +627,7 @@ function renderCalendarEvents(events, containerId) {
     return;
   }
   const logoMap = {
-    faav: '../img/Logo FAAV/Logo Faav.png?v=2',
+    faav: '../img/Logo FAAV/Logo Faav.png?v=3',
     vatsim: '../img/Logo Vatsim Argentina/Logo Vatsim Argentina.png',
     vsoa: '../img/Logo VSOA/Logo VSOA.png'
   };
@@ -613,8 +643,9 @@ function renderCalendarEvents(events, containerId) {
     const logoSrc = logoMap[logoKey] || '';
     const logoHtml = logoSrc ? '<img src="' + logoSrc + '" class="cal-logo' + (logoKey === 'vsoa' ? ' cal-logo-lg' : '') + '" alt="' + orgLabel + '">' : '';
     const link = e.link ? '<a href="' + e.link + '" target="_blank" rel="noopener" class="op-link">Ver evento <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>' : '';
+    const gcal = googleCalLink(e) ? '<a href="' + googleCalLink(e) + '" target="_blank" rel="noopener" class="op-link">Agregar a Google Calendar <svg style="width:13px;height:13px"><use href="#ic-arrow"/></svg></a>' : '';
     const badge = e.participating ? '<span class="cal-badge">FAAV PRESENTE</span>' : '';
-    const footer = '<div class="cal-footer"><div class="cal-footer-top"><span class="cal-org ' + orgClass + '">' + orgLabel + '</span>' + logoHtml + '</div>' + badge + '<div class="cal-footer-bottom">' + link + '</div></div>';
+    const footer = '<div class="cal-footer"><div class="cal-footer-top"><span class="cal-org ' + orgClass + '">' + orgLabel + '</span>' + logoHtml + '</div>' + badge + '<div class="cal-footer-bottom">' + link + gcal + '</div></div>';
     card.innerHTML =
       '<span class="lc-tl"></span><span class="lc-tr"></span><span class="lc-bl"></span><span class="lc-br"></span>' +
       '<div class="cal-date"><span class="dot"></span>' + formatDateART(e.start) + '</div>' +
@@ -646,22 +677,39 @@ function initCalendar() {
     });
   });
 
+  const setCalStatus = function(text){
+    const el = document.getElementById('cal-status');
+    if(el) el.textContent = text;
+  };
+  const renderAll = function(result){
+    renderCalendarEvents(result.faav, 'cal-grid-faav');
+    renderCalendarEvents(result.vsoa, 'cal-grid-vsoa');
+    renderCalendarEvents(result.argar, 'cal-grid-argar');
+    renderCalendarEvents(result.past, 'cal-grid-past');
+  };
+
   fetch('https://my.vatsim.net/api/v2/events/latest')
     .then(function(res) { return res.json(); })
     .then(function(data) {
       const events = data.data || data || [];
+      try { localStorage.setItem('faav_events_cache', JSON.stringify({ at: new Date().toISOString(), events: events })); } catch(e){}
       const result = classifyEvents(events);
-      renderCalendarEvents(result.faav, 'cal-grid-faav');
-      renderCalendarEvents(result.vsoa, 'cal-grid-vsoa');
-      renderCalendarEvents(result.argar, 'cal-grid-argar');
-      renderCalendarEvents(result.past, 'cal-grid-past');
+      renderAll(result);
+      setCalStatus('Sincronizado con VATSIM · ' + new Date().toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'}));
     })
     .catch(function() {
-      const result = classifyEvents([]);
-      renderCalendarEvents(result.faav, 'cal-grid-faav');
-      renderCalendarEvents(result.vsoa, 'cal-grid-vsoa');
-      renderCalendarEvents(result.argar, 'cal-grid-argar');
-      renderCalendarEvents(result.past, 'cal-grid-past');
+      let cached = null;
+      try { cached = JSON.parse(localStorage.getItem('faav_events_cache') || 'null'); } catch(e){}
+      if (cached && Array.isArray(cached.events)) {
+        const result = classifyEvents(cached.events);
+        renderAll(result);
+        const t = new Date(cached.at).toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'});
+        setCalStatus('Mostrando eventos guardados de las ' + t + ' (sin conexión)');
+      } else {
+        const result = classifyEvents([]);
+        renderAll(result);
+        setCalStatus('No se pudo sincronizar con VATSIM en este momento.');
+      }
     });
 }
 initCalendar();

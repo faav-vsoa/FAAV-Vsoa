@@ -119,6 +119,7 @@ nav{
 .hero p.lead{font-size:17.5px; color:var(--muted); max-width:480px; margin-bottom:36px;}
 .hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:56px;}
 .hero-grid > div:first-child{min-height:480px; display:flex; flex-direction:column; justify-content:center;}
+.hero-social{width:100%; max-width:420px; margin:0 auto; display:flex; flex-direction:column; gap:14px;}
 
 .stat-strip{
   display:grid; grid-template-columns:repeat(4,1fr);

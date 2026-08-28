@@ -557,17 +557,18 @@ function classifyEvents(vatsimEvents) {
   const vsoaLinks = new Set(vsoa.map(a => a.link));
 
   vatsimEvents.forEach(e => {
-    const isSAM = e.organisers && e.organisers.some(o => o.division === 'SAM');
+    const isSAM = (e.organisers || []).some(o => o.division === 'SAM');
     if (!isSAM) return;
     const card = {
       name: e.name,
-      start: e.startTime,
-      end: e.endTime,
-      airports: (e.airports || []).map(a => a.icao),
-      desc: stripHTML(e.shortDescription || ''),
+      start: e.startTime || e.start_time,
+      end: e.endTime || e.end_time,
+      airports: (e.airports || []).map(a => (typeof a === 'string' ? a : a.icao)).filter(Boolean),
+      desc: stripHTML(e.shortDescription || e.short_description || ''),
       link: e.link || '',
     };
-    const hasARG = (e.airports || []).some(a => /^SA/i.test(a.icao));
+    if (!card.start) return;
+    const hasARG = card.airports.some(code => /^SA/i.test(code));
     if (hasARG) {
       if (!argarLinks.has(card.link)) { argar.push({ ...card, isVatsimAR: true }); }
     } else {
@@ -650,7 +651,7 @@ function initCalendar() {
     });
   });
 
-  fetch('https://vatsim.net/api/events')
+  fetch('https://my.vatsim.net/api/v2/events/latest')
     .then(function(res) { return res.json(); })
     .then(function(data) {
       const events = data.data || data || [];

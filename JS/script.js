@@ -485,8 +485,8 @@ function updateMap(livePilots) {
 /* ══════════════════════════════════════════════════════════════════
    CALENDARIO DE EVENTOS
    - FAAV: agregar con isFAAV: true en FAAV_EVENTS
-   - VATSIM ARGENTINA: agregar con isFAAV: false en FAAV_EVENTS
-   - EVENTOS VSOA: se cargan automáticamente de la API de VATSIM (división SAM)
+   - VATSIM ARGENTINA: se sincroniza de la API de VATSIM (división SAM + aeropuertos SA); agregar fijos con isFAAV: false
+   - EVENTOS VSOA: eventos de otras VSOAs, se cargan manualmente con isVSOA: true en FAAV_EVENTS
 ═════════════════════════════════════════════════════════════════ */
 const FAAV_EVENTS = [
   {
@@ -554,7 +554,6 @@ function classifyEvents(vatsimEvents) {
   });
 
   const argarLinks = new Set(argar.map(a => a.link));
-  const vsoaLinks = new Set(vsoa.map(a => a.link));
 
   vatsimEvents.forEach(e => {
     const isSAM = (e.organisers || []).some(o => o.division === 'SAM');
@@ -569,11 +568,7 @@ function classifyEvents(vatsimEvents) {
     };
     if (!card.start) return;
     const hasARG = card.airports.some(code => /^SA/i.test(code));
-    if (hasARG) {
-      if (!argarLinks.has(card.link)) { argar.push({ ...card, isVatsimAR: true }); }
-    } else {
-      if (!vsoaLinks.has(card.link)) { vsoa.push({ ...card, isVSOA: true }); }
-    }
+    if (hasARG && !argarLinks.has(card.link)) { argar.push({ ...card, isVatsimAR: true }); }
   });
 
   faav.sort((a, b) => new Date(a.start) - new Date(b.start));

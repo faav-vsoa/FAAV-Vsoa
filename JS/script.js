@@ -77,23 +77,15 @@ document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
   ══════════════════════════════════════════════════════════════════ */
  
   var PILOTS = [
-  { name: 'Horacio C.',   cid: 844904,  callsign: 'FAG-124', indicativo: '"RAPTOR"', brigade: 'VI BAe "Tandil"' },
-  { name: 'Julian L.',       cid: 1575754, callsign: 'FAG-211', indicativo: '"LITRO"', brigade: 'I BAe "El Palomar"' },
   { name: 'Juan Pablo G.',cid: 1562806, callsign: 'FAG-212', indicativo: '"CONDOR"', brigade: 'I BAe "El Palomar"' },
   { name: 'Bruno C.',   cid: 1462350, callsign: 'FAG-213', indicativo: '"RAYO"', brigade: 'VI BAe "Tandil"' },
-  { name: 'Nicolás M.',      cid: 1666659, callsign: 'FAG-218', indicativo: '"DOGO"', brigade: 'V BAe "Villa Reynolds"' },
   { name: 'Alexis A.',       cid: 0,        callsign: 'FAG-222', indicativo: '"LOBO"', brigade: 'VI BAe "Tandil"' },
   { name: 'Emiliano P.',   cid: 1665183, callsign: 'FAG-228', indicativo: '"DELTA"', brigade: 'VI BAe "Tandil"' },
   { name: 'Alexis D.',        cid: 1665608, callsign: 'FAG-229', indicativo: '"CUERVO"', brigade: 'I BAe "El Palomar"' },
   { name: 'Thiago P.',    cid: 1502178, callsign: 'FAG-230', indicativo: '"DRAGON"', brigade: 'I BAe "El Palomar"' },
   { name: 'Joaquín Q.',      cid: 1712199, callsign: 'FAG-236', indicativo: '"DAGA"', brigade: 'VI BAe "Tandil"' },
-  { name: 'Nicolás C.',    cid: 1500943, callsign: 'FAG-238', indicativo: '"CHISPA"', brigade: 'V BAe "Villa Reynolds"' },
-  { name: 'Fernando M.',    cid: 1764792, callsign: 'FAG-242', indicativo: '"BUHO"', brigade: 'III BAe "Reconquista"' },
   { name: 'Agustin L.',    cid: 1282428, callsign: 'FAG-246', indicativo: '"PUMA"', brigade: 'VI BAe "Tandil"' },
-  { name: 'Juan Manuel C.',cid: 1831103, callsign: 'FAG-250', indicativo: '"LINCE"', brigade: 'VI BAe "Tandil"' },
   { name: 'Emmanuel D.',    cid: 1835877, callsign: 'FAG-251', indicativo: '"TERO"', brigade: 'I BAe "El Palomar"' },
-  { name: 'Giuseppe F.',   cid: 1974289, callsign: 'FAG-252', indicativo: '"ZORRO"', brigade: 'V BAe "Villa Reynolds"' },
-  { name: 'Mateo D.',      cid: 1910520, callsign: 'FAG-254', indicativo: '"X"', brigade: 'EAM - Esc. Aviación Militar' },
   { name: 'Joel C.',  cid: 2005108, callsign: 'FAG-255', indicativo: '"CHAJA"', brigade: 'EAM - Esc. Aviación Militar' },
   { name: 'Facundo B.',    cid: 1785540, callsign: 'FAG-256', indicativo: '"CHIMANGO"', brigade: 'EAM - Esc. Aviación Militar' },
 ];

@@ -2,23 +2,15 @@ const fs = require('fs');
 const path = require('path');
 
 const PILOTS = [
-  { cid: 844904,  callsign: 'FAG-124' },
-  { cid: 1575754, callsign: 'FAG-211' },
   { cid: 1562806, callsign: 'FAG-212' },
   { cid: 1462350, callsign: 'FAG-213' },
-  { cid: 1666659, callsign: 'FAG-218' },
   { cid: 0,        callsign: 'FAG-222' },
   { cid: 1665183, callsign: 'FAG-228' },
   { cid: 1665608, callsign: 'FAG-229' },
   { cid: 1502178, callsign: 'FAG-230' },
   { cid: 1712199, callsign: 'FAG-236' },
-  { cid: 1500943, callsign: 'FAG-238' },
-  { cid: 1764792, callsign: 'FAG-242' },
   { cid: 1282428, callsign: 'FAG-246' },
-  { cid: 1831103, callsign: 'FAG-250' },
   { cid: 1835877, callsign: 'FAG-251' },
-  { cid: 1974289, callsign: 'FAG-252' },
-  { cid: 1910520, callsign: 'FAG-254' },
   { cid: 2005108, callsign: 'FAG-255' },
   { cid: 1785540, callsign: 'FAG-256' },
 ];

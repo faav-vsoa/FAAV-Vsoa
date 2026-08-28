@@ -104,16 +104,39 @@
     <span id="last-update">Cargando…</span>
    </div>
 
-    <div style="margin-bottom:24px; text-align:center;" data-reveal>
-     <a href="todos-pilotos.html" class="btn btn-primary"><span>Ver todos los pilotos</span> <svg style="width:14px;height:14px"><use href="#ic-arrow"/></svg></a>
-    </div>
-
     <div id="vatsim-map" class="lockframe" data-reveal style="height: 500px; width: 100%; margin-bottom: 24px; position: relative; border: 1px solid rgba(0, 210, 255, 0.2); background: #080d14; border-radius:2px;"></div>
 
     <div id="online-grid" class="pilot-grid pilot-grid-list" data-reveal></div>
 
     <div id="no-online" style="display:none; text-align:center; padding:48px 24px; color:var(--muted); font-size:14px;" data-reveal>
      No hay pilotos de la FAAV volando en este momento.
+    </div>
+
+    <div style="margin-top:56px;" data-reveal>
+     <div class="section-head">
+      <h2>Listado de pilotos</h2>
+      <p>Pilotos registrados de la FAAV.</p>
+     </div>
+     <div class="tracker-summary" data-reveal>
+      <span><b id="all-count">0</b> <span>pilotos en el roster</span></span>
+      <span id="all-online-count"><span class="live-dot"></span><b id="all-live-count">0</b><span>en vuelo ahora</span></span>
+      <span id="all-update">Cargando…</span>
+     </div>
+     <div style="overflow-x:auto;" data-reveal>
+      <table id="pilot-table" style="width:100%; border-collapse:collapse; font-family:'JetBrains Mono',monospace; font-size:13px;">
+       <thead>
+        <tr style="border-bottom:2px solid var(--line-strong); text-align:center;">
+         <th style="padding:14px 16px; color:var(--blue-light); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">Callsign</th>
+         <th style="padding:14px 16px; color:var(--blue-light); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">Nombre</th>
+         <th style="padding:14px 16px; color:var(--blue-light); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">Indicativo</th>
+         <th style="padding:14px 16px; color:var(--blue-light); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">Brigada</th>
+         <th style="padding:14px 16px; color:var(--blue-light); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">CID VATSIM</th>
+         <th style="padding:14px 16px; color:var(--blue-light); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">Estado</th>
+        </tr>
+       </thead>
+       <tbody id="pilot-tbody"></tbody>
+      </table>
+     </div>
     </div>
 
   </div>
@@ -219,6 +242,70 @@
  }
  loadOnline();
  setInterval(loadOnline, 60000);
+})();
+(function(){
+ var PILOTS = window.PILOTS || [];
+ var tbody = document.getElementById('pilot-tbody');
+ var countEl = document.getElementById('all-count');
+ var liveCountEl = document.getElementById('all-live-count');
+ var updateEl = document.getElementById('all-update');
+ if(!tbody) return;
+
+ countEl.textContent = PILOTS.length;
+
+ async function loadAll(){
+  try {
+   var res = await fetch('https://data.vatsim.net/v3/vatsim-data.json');
+   var data = await res.json();
+   var live = data.pilots || [];
+   var onlineCount = 0;
+
+   tbody.innerHTML = '';
+
+   var sorted = PILOTS.slice().sort(function(a,b){
+    return (a.callsign || '').localeCompare(b.callsign || '');
+   });
+
+   sorted.forEach(function(p){
+    var lv = live.find(function(lp){ return lp.cid === p.cid; });
+    var isOnline = !!lv;
+    if(isOnline) onlineCount++;
+
+    var tr = document.createElement('tr');
+    tr.style.borderBottom = '1px solid var(--line)';
+    tr.style.transition = 'background .2s ease';
+    tr.onmouseenter = function(){ tr.style.background = 'rgba(127,184,242,0.04)'; };
+    tr.onmouseleave = function(){ tr.style.background = 'transparent'; };
+
+    var statusHtml = isOnline
+     ? '<span style="display:inline-flex;align-items:center;gap:6px;color:var(--gold);"><span style="width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 7px var(--gold);animation:pulse-dot 1.8s ease-in-out infinite;"></span>En vuelo</span>'
+     : '<span style="color:var(--muted);">Sin conexión</span>';
+
+    var flightInfo = '';
+    if(isOnline && lv.flight_plan){
+     var fp = lv.flight_plan;
+     var route = (fp.departure || '????') + ' → ' + (fp.arrival || '????');
+     flightInfo = '<span style="color:var(--blue-light);font-size:11px;margin-left:8px;">✈ ' + route + '</span>';
+    }
+
+    tr.innerHTML =
+     '<td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:600;"><a href="piloto.html?cid=' + p.cid + '" style="color:var(--gold);text-decoration:none;">' + (p.callsign || '—') + '</a></td>' +
+     '<td style="padding:12px 16px;text-align:center;color:var(--ivory);">' + p.name + '</td>' +
+     '<td style="padding:12px 16px;text-align:center;color:var(--muted);">' + (p.indicativo || '—') + '</td>' +
+     '<td style="padding:12px 16px;text-align:center;color:var(--muted);">' + (p.brigade || '—') + '</td>' +
+     '<td style="padding:12px 16px;text-align:center;"><a href="https://stats.vatsim.net/stats/' + p.cid + '" target="_blank" rel="noopener" style="color:var(--blue-light);text-decoration:none;border-bottom:1px dotted rgba(0,210,255,0.3);">' + p.cid + '</a></td>' +
+     '<td style="padding:12px 16px;text-align:center;">' + statusHtml + flightInfo + '</td>';
+    tbody.appendChild(tr);
+   });
+
+   liveCountEl.textContent = onlineCount;
+   updateEl.textContent = 'actualizado ' + new Date().toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'});
+  } catch(e){
+   updateEl.textContent = 'Error de conexión con VATSIM';
+  }
+ }
+ loadAll();
+ setInterval(loadAll, 60000);
 })();
 </script>
 

@@ -1,8 +1,7 @@
 {
-
   "1282428": {
-    "hours": "822h 17m",
-    "last": "TC66 · 25 de ago de 2026",
+    "hours": "824h 26m",
+    "last": "CONDR12 · 27 de ago de 2026",
     "lastDetail": "",
     "airport": "SAOC",
     "aircraft": "C130",
@@ -31,19 +30,18 @@
       }
     ]
   },
-
   "1502178": {
-    "hours": "2818h 21m",
-    "last": "DLH510 · 26 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">EDDF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAEZ</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B748</span>",
+    "hours": "2832h 17m",
+    "last": "JES3000 · 27 de ago de 2026",
+    "lastDetail": "",
     "airport": "SABE",
     "aircraft": "A320",
     "lastFlights": []
   },
   "1562806": {
-    "hours": "457h 6m",
-    "last": "FAG212 · 23 de ago de 2026",
-    "lastDetail": "",
+    "hours": "458h 35m",
+    "last": "CONDR11 · 27 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAME</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SAOC",
     "aircraft": "F16",
     "lastFlights": [
@@ -53,17 +51,9 @@
         "route": "SAOC → SAOC",
         "date": "15 de ago de 2026",
         "remark": "DOF/260815 REG/M-1020 OPR/FAG RMK/DOF/260815 REG/M1020 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA VSOA/FAAV.COM.AR /V/ /V/"
-      },
-      {
-        "callsign": "FOKKER",
-        "aircraft": "F28",
-        "route": "SADP → SADP",
-        "date": "11 de ago de 2026",
-        "remark": "PBN/B2C2D2 DOF/260811 REG/TC53 CODE/E14D73 OPR/ARGENTINA AIR FORCE PER/B RMK/OPR/ARGENTINA AIR FORCE STS/STATE STS/MARSA FFLT/FOKKER 1-2 FFLTEND VSOA/FAAV.COM.AR /V/"
       }
     ]
   },
-
   "1665183": {
     "hours": "158h 12m",
     "last": "DELTA · 09 de jun de 2026",
@@ -117,7 +107,6 @@
       }
     ]
   },
-
   "1712199": {
     "hours": "337h 3m",
     "last": "DAGA · 15 de ago de 2026",
@@ -183,7 +172,6 @@
       }
     ]
   },
-
   "1785540": {
     "hours": "152h 45m",
     "last": "PAMPA2 · 20 de ago de 2026",
@@ -242,7 +230,6 @@
       }
     ]
   },
-
   "1835877": {
     "hours": "107h 16m",
     "last": "FAG251 · 25 de ago de 2026",
@@ -294,8 +281,6 @@
       }
     ]
   },
-
-
   "2005108": {
     "hours": "40h 17m",
     "last": "FAG255 · 21 de ago de 2026",

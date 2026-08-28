@@ -570,7 +570,18 @@ function classifyEvents(vatsimEvents) {
   vsoa.sort((a, b) => new Date(a.start) - new Date(b.start));
   argar.sort((a, b) => new Date(a.start) - new Date(b.start));
 
-  return { faav, vsoa, argar };
+  const now = Date.now();
+  const isPast = function(e) {
+    const t = new Date(e.end || e.start).getTime();
+    return (!isNaN(t) ? t : new Date(e.start).getTime()) < now;
+  };
+  const upcoming = function(arr) { return arr.filter(e => !isPast(e)); };
+  const past = faav.concat(vsoa).concat(argar)
+    .filter(isPast)
+    .sort((a, b) => new Date(b.start) - new Date(a.start))
+    .slice(0, 5);
+
+  return { faav: upcoming(faav), vsoa: upcoming(vsoa), argar: upcoming(argar), past };
 }
 
 function renderCalendarEvents(events, containerId) {
@@ -616,6 +627,7 @@ function initCalendar() {
     faav: document.getElementById('cal-grid-faav'),
     vsoa: document.getElementById('cal-grid-vsoa'),
     argar: document.getElementById('cal-grid-argar'),
+    past: document.getElementById('cal-grid-past'),
   };
 
   tabs.forEach(tab => {
@@ -637,12 +649,14 @@ function initCalendar() {
       renderCalendarEvents(result.faav, 'cal-grid-faav');
       renderCalendarEvents(result.vsoa, 'cal-grid-vsoa');
       renderCalendarEvents(result.argar, 'cal-grid-argar');
+      renderCalendarEvents(result.past, 'cal-grid-past');
     })
     .catch(function() {
       const result = classifyEvents([]);
       renderCalendarEvents(result.faav, 'cal-grid-faav');
       renderCalendarEvents(result.vsoa, 'cal-grid-vsoa');
       renderCalendarEvents(result.argar, 'cal-grid-argar');
+      renderCalendarEvents(result.past, 'cal-grid-past');
     });
 }
 initCalendar();

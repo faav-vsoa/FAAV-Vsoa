@@ -1,4 +1,4 @@
-﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -201,6 +201,7 @@
    var res = await fetch('https://data.vatsim.net/v3/vatsim-data.json');
    var data = await res.json();
    var live = data.pilots || [];
+   if(window.updateMap) updateMap(live);
    var online = PILOTS.filter(function(p){
     return live.some(function(lp){ return lp.cid === p.cid; });
    });

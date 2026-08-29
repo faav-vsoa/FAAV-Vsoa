@@ -31,9 +31,9 @@
     ]
   },
   "1502178": {
-    "hours": "2834h 8m",
+    "hours": "2834h 51m",
     "last": "LVWOC · 28 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAVT</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">LJ25</span>",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAVT</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">LJ25</span>",
     "airport": "SADF",
     "aircraft": "LJ25",
     "lastFlights": []

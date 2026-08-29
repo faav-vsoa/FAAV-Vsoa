@@ -1,10 +1,10 @@
 {
   "1282428": {
-    "hours": "824h 26m",
-    "last": "CONDR12 · 27 de ago de 2026",
-    "lastDetail": "",
+    "hours": "825h 2m",
+    "last": "CONDR14 · 29 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SAOC",
-    "aircraft": "C130",
+    "aircraft": "F16",
     "lastFlights": []
   },
   "1462350": {
@@ -31,17 +31,17 @@
     ]
   },
   "1502178": {
-    "hours": "2834h 51m",
-    "last": "LVWOC · 28 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAVT</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">LJ25</span>",
+    "hours": "2835h 34m",
+    "last": "CONDR13 · 29 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SADF",
     "aircraft": "LJ25",
     "lastFlights": []
   },
   "1562806": {
-    "hours": "458h 35m",
-    "last": "CONDR11 · 27 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAOC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAME</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
+    "hours": "458h 56m",
+    "last": "CONDR11 · 29 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SAOC",
     "aircraft": "F16",
     "lastFlights": [
@@ -108,9 +108,9 @@
     ]
   },
   "1712199": {
-    "hours": "337h 3m",
-    "last": "DAGA · 15 de ago de 2026",
-    "lastDetail": "",
+    "hours": "338h 15m",
+    "last": "CONDR12 · 29 de ago de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAWC</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">F16</span>",
     "airport": "SAOC",
     "aircraft": "F16",
     "lastFlights": [
@@ -158,13 +158,6 @@
       },
       {
         "callsign": "CONDOR1",
-        "aircraft": "F16",
-        "route": "SAAP → SAOC",
-        "date": "23 de jun de 2026",
-        "remark": "DOF/260623 REG/M-1004 OPR/FAG RMK/OPR/ARGENTINA AIR FORCE STS/MARSA FFLT/CONDOR1-2 FFLTEND VSOA/FAAV.COM.AR /V/"
-      },
-      {
-        "callsign": "DAGA",
         "aircraft": "F16",
         "route": "SAAP → SAOC",
         "date": "23 de jun de 2026",

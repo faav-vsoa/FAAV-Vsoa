@@ -31,10 +31,10 @@
     ]
   },
   "1502178": {
-    "hours": "2846h 45m",
-    "last": "ARG1678 · 31 de ago de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAZS</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B38M</span>",
-    "airport": "SADF",
+    "hours": "2846h 60m",
+    "last": "ARG1001 · 01 de sept de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAEZ</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B38M</span>",
+    "airport": "SABE",
     "aircraft": "LJ25",
     "lastFlights": []
   },

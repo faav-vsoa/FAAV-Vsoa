@@ -31,10 +31,10 @@
     ]
   },
   "1502178": {
-    "hours": "2846h 60m",
-    "last": "ARG1001 · 01 de sept de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SAEZ</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">B38M</span>",
-    "airport": "SABE",
+    "hours": "2845h 29m",
+    "last": "LVKLH · 01 de sept de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">GLF5</span>",
+    "airport": "SADF",
     "aircraft": "LJ25",
     "lastFlights": []
   },

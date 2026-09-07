@@ -31,10 +31,10 @@
     ]
   },
   "1502178": {
-    "hours": "2848h 39m",
-    "last": "LVKAX · 03 de sept de 2026",
-    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SASA</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">GLF5</span>",
-    "airport": "SADF",
+    "hours": "2851h 13m",
+    "last": "LVKLH · 07 de sept de 2026",
+    "lastDetail": "<span style=\"color:var(--blue-light);font-weight:400;\">SABE</span> <span style=\"color:var(--muted);font-size:10px;\">→</span> <span style=\"color:var(--blue-light);font-weight:400;\">SADF</span> <span style=\"color:var(--muted);font-size:10px;\">·</span> <span style=\"color:var(--blue-light);font-weight:400;\">G550</span>",
+    "airport": "SABE",
     "aircraft": "GLF5",
     "lastFlights": []
   },
